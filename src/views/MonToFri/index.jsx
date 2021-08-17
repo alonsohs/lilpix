@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from "../../components/monToFri/Hero";
 import Week from "../../components/monToFri/Week";
 
-import {weeks} from "../../../../data";
+import {weeks} from "../../../data";
 
 const MonToFri = () => {
     const numberWeeks = weeks.length
