@@ -1,0 +1,30 @@
+
+/*Reset*/
+* {
+  box-sizing: border-box;
+  margin: 0 0;
+  padding: 0;
+}
+
+/*Principal Style of entire WebSite and text*/
+body {
+  font-family: 'Oswald', sans-serif;
+  height: 100%;
+  background-color: #1d1d1d;
+  color: #ffffff;
+
+  cursor: auto;
+}
+
+a {
+  color: #ffffff; /* Text Color of icons and nav tabs */
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  position: relative;
+  top: 20vh;
+}

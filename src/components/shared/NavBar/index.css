@@ -1,0 +1,262 @@
+.ham {
+    position: fixed;
+    cursor: pointer;
+    font-size: 30px;
+    top: 30px;
+    right: 30px;
+    background-color: transparent;
+    display: none;
+    z-index: 999;
+}
+.ham span {
+    background-color: #ffffff;
+    display: block;
+    height: 5px;
+    width: 30px;
+    margin: 5px auto;
+    border-radius: 2px;
+}
+
+.container {
+    width: 100%;
+    height: 20vh;
+    max-height: 20vh;
+    margin: 0;
+    position: fixed;
+    z-index: 2;
+}
+/*NAVIGATION MAIN*/
+.nav-main-all {
+    align-items: center;
+    background-color: #181818;
+    margin-left: 0;
+    margin-right: 0;
+    height: 20vh;
+    max-height: 20vh;
+}
+
+/*NAVIGATION UP (Logo, Work, About, Skills, Contact)*/
+.nav-main-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+    margin: 0;
+    height: 100px;
+}
+
+/*Logo lilpix*/
+.nav-brand {
+    align-items: center;
+    width: 200px;
+}
+.nav-brand-menu {
+    display: none;
+}
+
+.nav-brand:hover {
+    animation: logo 0.1s alternate;
+}
+
+@keyframes logo {
+    0% {
+        transform: translateX(-5px);
+    }
+    10% {
+        transform: translateX(-5px);
+    }
+    15% {
+        transform: translateY(-3px);
+    }
+
+    300% {
+        transform: translateY(3px);
+    }
+}
+
+/*NAV TABS (Work, About, Skills, Contact)*/
+.nav-main-up ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* center items vertically, in this case */
+    vertical-align: middle;
+}
+
+/*S E P A R A T E   NAV TABS (Work, About, Skills, Contact)*/
+
+.enlaces-menu li {
+    padding-left: 30px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.nav-main-up ul li a {
+    font-size: 30px;
+}
+
+.enlaces-menu li a {
+    text-decoration-line: none;
+    padding: 0;
+}
+
+.enlaces-menu li a:hover {
+    text-decoration: line-through 5px solid #fd2155;
+    transition: 0.5s;
+    width: 100%;
+}
+/*END OF NAVIGATION UP*/
+
+/*NAVIGATION DOWN (Slogan and Social Media)*/
+.nav-main-down {
+    padding: 0px 15px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+/*SLOGAN (my little pixels)*/
+h6 {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    letter-spacing: 7.75px;
+    margin-right: 15px;
+}
+
+.slogan:hover {
+    animation: glitch 0.2s infinite;
+}
+
+/*Social Media*/
+
+.nav-menu-social {
+    margin-right: 0px;
+}
+
+.nav-main-down ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu-social li {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.nav-menu-social li:hover {
+    animation: glitch 0.5s infinite alternate;
+}
+/*END Nav main DOWN*/
+hr {
+    border: 2.5px solid #04bda1;
+    border-radius: 5px;
+}
+
+/*--------------------------------------------------------RESPONSIVE------------------------------------------------------*/
+@media (max-width: 1022px) {
+    /*Btn ham (bars)*/
+    .ham {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        right: 25px;
+        transition: 0.2s 0.1s;
+        z-index: 999;
+    }
+
+    /* Animaciones para btn ham and close*/
+    @keyframes muestraMenu {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* END Animaciones */
+
+    /*ENLACES MENU (Mon-To-Fri, Video Loop, Wallpaper, Archive, About)*/
+    .enlaces-menu.activado {
+        display: flex;
+        animation: muestraMenu 350ms ease-in-out both;
+        z-index: 10;
+    }
+    /*Animation for BTN CLOSE (X)*/
+    .br-1.animado {
+        transform: rotate(-45deg) translate(-7px, 6px);
+        background-color: #fd2155;
+    }
+
+    .br-2.animado {
+        opacity: 0;
+    }
+    .br-3.animado {
+        transform: rotate(45deg) translate(-8px, -8px);
+        background-color: #fd2155;
+    }
+
+    .ham.girar:hover {
+        transform: rotate(360deg);
+    }
+
+    /*END Animation for BTN CLOSE (X)*/
+
+    .nav-brand-menu {
+        border: solid 3px white;
+        padding: 15px 30px;
+        align-items: center;
+        width: 250px;
+        display: block;
+    }
+    .enlaces-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: #181818;
+        opacity: 0;
+        transition: opacity 1s ease-out;
+        width: 100%;
+        height: 100vh;
+        z-index: -9999;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .nav-main-up li {
+        padding: 30px 0;
+
+        letter-spacing: 10px;
+        border-bottom: none;
+    }
+
+    .nav-main-down {
+        font-size: 20px;
+    }
+    .nav-main-down ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu-social li {
+        display: flex;
+        align-items: center;
+        padding: 0 25px; /*separación hacia los lados de SOCIAL MEDIA ICONS*/
+    }
+}
