@@ -1,6 +1,19 @@
-import React from 'react';
+import React, { useState }from 'react';
+
+import Modal from "../../shared/Modal";
+import PostDetails from "../PostDetails";
 
 const Post = ({title, date, url}) => {
+    const [show, setModal] = useState(false)
+
+    const openModal = () => {
+        setModal(true)
+    }
+
+    const closeModal = () => {
+        setModal(false)
+    }
+
     return (
         <div className="info_and_img">
             <div className="info_container">
@@ -13,7 +26,10 @@ const Post = ({title, date, url}) => {
                 src={url}
             />
 
-            <button className="more_btn">More</button>
+            <button className="more_btn" onClick={openModal}>More</button>
+            <Modal show={show} handleClose={closeModal}>
+                <PostDetails/>
+            </Modal>
         </div>
     )
 }
