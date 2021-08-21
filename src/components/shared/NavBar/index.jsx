@@ -35,7 +35,7 @@ const NavBar = () => {
 
 
                         <ul  className={`enlaces-menu ${isMenuOpen? 'activado': ''}`}>
-                            <Link to="/index/index.html">
+                            <Link to="/" onClick={toggleMenu}>
                                 <img
                                     src={Logo}
                                     alt="lilpix logo"
@@ -43,19 +43,19 @@ const NavBar = () => {
                                 />
                             </Link>
                             <li>
-                                <Link to="/mon-to-fri">Mon-to-Fri</Link>
+                                <Link to="/mon-to-fri" onClick={toggleMenu}>Mon-to-Fri</Link>
                             </li>
                             <li>
-                                <Link to="#">Video Loops</Link>
+                                <Link to="#"  onClick={toggleMenu}>Video Loops</Link>
                             </li>
                             <li>
-                                <Link to="#">Wallpapers</Link>
+                                <Link to="#"  onClick={toggleMenu}>Wallpapers</Link>
                             </li>
                             <li>
-                                <Link to="#">Archive</Link>
+                                <Link to="#"  onClick={toggleMenu}>Archive</Link>
                             </li>
                             <li>
-                                <Link to="#">About</Link>
+                                <Link to="#"  onClick={toggleMenu}>About</Link>
                             </li>
                             <li>
                                 <Link to="#">Contact</Link>

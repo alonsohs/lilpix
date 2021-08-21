@@ -28,3 +28,9 @@ main {
   position: relative;
   top: 20vh;
 }
+
+@media (max-width: 1022px) {
+  main {
+    top:210px;
+  }   
+}
