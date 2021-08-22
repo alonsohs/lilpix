@@ -1,188 +1,216 @@
 /*MON-TO-FRI*/
 
 .cover_counter {
-    display: flex;
-    border: 5px solid #00c3ff;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    margin-top: 70px;
-    width: 100%;
-    height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	margin: 10px 0;
+	width: 100%;
+	height: auto;
+}
+.hr_m-t-f {
+	border: 0;
+	height: 3px;
+	background-image: linear-gradient(
+		to right,
+		rgba(0, 225, 255, 0),
+		#ffffff,
+		rgba(12, 135, 184, 0)
+	);
 }
 
 .mon-to-fri_title {
-    background: crimson;
-    font-size: 60px;
-    letter-spacing: 60px;
-    text-align: center;
-    color: #fff;
+	font-size: 60px;
+	letter-spacing: 60px;
+	text-align: center;
+	color: #fff;
 }
 
 .mon-to-fri_title:hover {
-    animation: glitch 0.5s infinite alternate;
+	animation: glitch 0.5s infinite alternate;
 }
 
 .mon-to-fri_cover {
-    border: 2.5px solid #ff00c8;
-
-    width: 500px;
-    height: 500px;
-    position: relative;
+	width: 500px;
+	height: 500px;
+	position: relative;
 }
 /*COVER IMG*/
 .mon-to-fri_cover .img-front {
-    background-size: contain;
-    width: 100%;
-    height: 100%;
-    display: block;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	display: block;
 }
 .mon-to-fri_cover .img-back {
-    width: 100%;
-    height: 100%;
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
 
-    z-index: 0;
-    opacity: 0;
-    /*transform: translate(0%, -100%);*/
+	z-index: 0;
+	opacity: 0;
+	/*transform: translate(0%, -100%);*/
 }
 
 .mon-to-fri_cover:hover .img-back {
-    display: inline;
-    opacity: 0.95;
+	display: inline;
+	opacity: 0.95;
 
-    -webkit-animation: fadeInFromNone 1.5s ease-out;
-    -moz-animation: fadeInFromNone 1.5s ease-out;
-    -o-animation: fadeInFromNone 1.5s ease-out;
-    animation: fadeInFromNone 1.5s ease-out;
+	-webkit-animation: fadeInFromNone 1.5s ease-out;
+	-moz-animation: fadeInFromNone 1.5s ease-out;
+	-o-animation: fadeInFromNone 1.5s ease-out;
+	animation: fadeInFromNone 1.5s ease-out;
 }
 
 @-webkit-keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
+	0% {
+		display: none;
+		opacity: 0;
+	}
 
-    1% {
-        display: block;
-        opacity: 0;
-    }
+	1% {
+		display: block;
+		opacity: 0;
+	}
 
-    100% {
-        display: block;
-        opacity: 0.95;
-    }
+	100% {
+		display: block;
+		opacity: 0.95;
+	}
 }
 
 @-moz-keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
+	0% {
+		display: none;
+		opacity: 0;
+	}
 
-    1% {
-        display: block;
-        opacity: 0;
-    }
+	1% {
+		display: block;
+		opacity: 0;
+	}
 
-    100% {
-        display: block;
-        opacity: 0.95;
-    }
+	100% {
+		display: block;
+		opacity: 0.95;
+	}
 }
 
 @-o-keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
+	0% {
+		display: none;
+		opacity: 0;
+	}
 
-    1% {
-        display: block;
-        opacity: 0;
-    }
+	1% {
+		display: block;
+		opacity: 0;
+	}
 
-    100% {
-        display: block;
-        opacity: 0.95;
-    }
+	100% {
+		display: block;
+		opacity: 0.95;
+	}
 }
 
 @keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
+	0% {
+		display: none;
+		opacity: 0;
+	}
 
-    1% {
-        display: block;
-        opacity: 0;
-    }
+	1% {
+		display: block;
+		opacity: 0;
+	}
 
-    100% {
-        display: block;
-        opacity: 0.95;
-    }
+	100% {
+		display: block;
+		opacity: 0.95;
+	}
 }
 
 /*WEEKS COUNTER*/
 .mon-to-fri_counter {
-    border: 3px solid rgb(174, 0, 255);
-    width: 300px;
-    display: table;
+	width: 300px;
+	display: table;
 
-    justify-content: center;
+	justify-content: center;
 }
 .num_weeks {
-    border: 3px solid rgb(174, 0, 255);
-    font-size: 40px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+	font-size: 40px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 72px;
+}
+.num_weeks h2 {
+	background: -webkit-linear-gradient(#00ffd956, #05fdd8);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 /*Mon-to-Fri Description*/
 .mon-to-fri_description {
-    font-size: 20px;
-    border: 3px solid white;
-    width: 300px;
-    height: auto;
-    display: table;
+	font-size: 20px;
+	padding: 5px 15px;
+	width: 300px;
+	height: auto;
+	display: table;
 }
 .mon-to-fri_description p {
-    border: 3px solid white;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: justify;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: justify;
 }
 .more_btn {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    border: #00c3ff solid 3px;
+	width: 100%;
+	height: 100%;
+	top: 0;
 }
 /*----------------------------------RESPONSIVE--------------------------------------------------*/
 @media (max-width: 1176px) {
-    .cover_counter {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .mon-to-fri_description,
-    .mon-to-fri_counter {
-        width: auto;
-        max-width: 700px;
-    }
-    .num_weeks {
-        display: flex;
-    }
-    .mon-to-fri_cover {
-        width: auto;
-        height: auto;
-        max-width: 700px;
-        max-height: 700px;
-    }
+	.cover_counter {
+		flex-direction: column;
+		gap: 10px;
+	}
+	.mon-to-fri_description,
+	.mon-to-fri_counter {
+		width: auto;
+		max-width: 700px;
+	}
+	.num_weeks {
+		display: flex;
+	}
+	.mon-to-fri_cover {
+		width: auto;
+		height: auto;
+		max-width: 700px;
+		max-height: 700px;
+	}
+}
+@media (max-width: 1000px) {
+	.mon-to-fri_title {
+		font-size: 40px;
+		letter-spacing: 40px;
+		text-align: center;
+		color: #fff;
+	}
+}
+@media (max-width: 650px) {
+	.mon-to-fri_title {
+		font-size: 30px;
+		letter-spacing: 20px;
+	}
+	.num_weeks {
+		font-size: 25px;
+	}
+	.mon-to-fri_description {
+		font-size: 15px;
+	}
 }

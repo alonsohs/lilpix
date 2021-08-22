@@ -1,79 +1,90 @@
 /*---------------------------------WEEK # - CONTAINER-----------------------------------------------------------*/
 .week_container_main {
-    border: 5px solid green;
-    position: relative;
+	position: relative;
 }
 /*Title (WEEK ###) AND Subtutle(p)*/
 .weeks_title {
-    background: crimson;
-    font-size: 40px;
-    letter-spacing: 40px;
-    text-align: center;
-    color: #fff;
+	font-size: 40px;
+	letter-spacing: 40px;
+	text-align: center;
+	color: #fff;
+	background-color: #00ffd956;
 }
 .weeks_title p {
-    font-size: 20px;
-    letter-spacing: 5px;
+	font-size: 20px;
+	letter-spacing: 5px;
 }
 /*(----------------------------------)*/
-.hr_m-t-f {
-    border: 2.5px solid #ffffff;
-    border-radius: 5px;
-    margin-bottom: px;
-    margin-left: 45px;
-    margin-right: 45px;
-}
+
 /*Info and Img*/
 .main_week_block {
-    border: 5px solid #fd2155;
-    margin: 0 30px;
-    display: flex;
-    flex-wrap: wrap;
-    /*grid-template-columns: repeat(auto-fill, minmax(340px, auto));
-    grid-auto-rows: minmax(375px, auto);
-    justify-content: space-around;*/
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    gap: 60px;
+	margin: 0 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	gap: 60px;
 }
 /*Container of each image and info block*/
 .info_and_img {
-    border: 3px solid rgb(255, 123, 0);
-    width: 300px;
-    height: auto;
-    text-align: center;
-    justify-content: center;
+	width: 30%;
+	height: auto;
+	text-align: center;
+	justify-content: center;
+	background-color: #181818;
+}
+/*Title and date*/
+.info_container {
+	border: #fff solid 3px;
+	height: 100px;
+	padding: 0;
 }
 /*Title*/
-.info_container {
-    border: 3px solid aqua;
-    font-size: 40px;
+.info_container .img_title {
+	border: yellow solid 3px;
+	font-size: 20px;
+	width: auto;
+	height: 50px;
 }
 /*Date*/
 .info_container .img_date {
-    font-size: 15px;
+	font-size: 15px;
 }
 /*Image*/
 .img_png {
-    border: 3px solid red;
-    background-size: contain;
-    width: 100%;
-    overflow: hidden;
+	background-size: contain;
+	width: 100%;
+	overflow: hidden;
 }
 /*Btn More*/
 .img_more_btn {
-    border: 2px solid yellow;
-    font-size: 30px;
+	font-size: 30px;
 }
 /*-----RESPONSIVE-----*/
 @media (max-width: 1176px) {
-    .info_and_img {
-        width: 450px;
-    }
+	.info_and_img {
+		width: 45%;
+	}
 }
-@media (max-width: 1116px) {
-    .info_and_img {
-        width: 700px;
-    }
+
+@media (max-width: 1000px) {
+	.weeks_title {
+		font-size: 40px;
+		letter-spacing: 40px;
+		text-align: center;
+		color: #fff;
+	}
+}
+@media (max-width: 650px) {
+	.weeks_title {
+		font-size: 30px;
+		letter-spacing: 20px;
+	}
+	.weeks_title p {
+		font-size: 15px;
+	}
+	.info_and_img {
+		width: 90%;
+	}
 }

@@ -1,36 +1,29 @@
-
 /*Reset*/
 * {
-  box-sizing: border-box;
-  margin: 0 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0 0;
+	padding: 0;
 }
 
 /*Principal Style of entire WebSite and text*/
 body {
-  font-family: 'Oswald', sans-serif;
-  height: 100%;
-  background-color: #1d1d1d;
-  color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+	height: 100%;
+	background-color: #1d1d1d;
+	color: #ffffff;
 
-  cursor: auto;
+	cursor: auto;
 }
 
 a {
-  color: #ffffff; /* Text Color of icons and nav tabs */
+	color: #ffffff; /* Text Color of icons and nav tabs */
+	text-decoration: none;
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 main {
-  position: relative;
-  top: 20vh;
-}
-
-@media (max-width: 1022px) {
-  main {
-    top:210px;
-  }   
+	position: relative;
 }

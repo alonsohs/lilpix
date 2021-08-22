@@ -1,0 +1,103 @@
+.about_hero {
+	padding: 30px;
+	gap: 30px;
+	display: flex;
+	border: hotpink solid 5px;
+	width: 100%;
+	height: 80vh;
+
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	top: 0;
+}
+
+/*COVER IMG*/
+.MyselfPic {
+	border: 2.5px solid #ff00c8;
+
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+.MyselfPic .me_front {
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.MyselfPic .me_back {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	opacity: 0;
+	/*transform: translate(0%, -100%);*/
+}
+/*Hover Images*/
+.MyselfPic:hover .me_back {
+	display: inline;
+	opacity: 1;
+
+	-webkit-animation: fadeInFromNone 1.5s ease-out;
+	-moz-animation: fadeInFromNone 1.5s ease-out;
+	-o-animation: fadeInFromNone 1.5s ease-out;
+	animation: fadeInFromNone 1.5s ease-out;
+}
+
+/*I'm Jesús Hernández*/
+.about_container {
+	display: block;
+	width: 600px;
+	height: auto;
+	border: rgb(255, 255, 255) solid 2px;
+}
+.i_am_container {
+	display: flex;
+	letter-spacing: 10px;
+	justify-content: center;
+	text-align: right;
+}
+
+.i_am {
+	border: springgreen solid 1px;
+	transition: 0.3s ease all;
+	font-size: 40px;
+	text-align: justify;
+}
+.i_am:hover {
+	color: #05fdd8;
+	animation: 0.3s glitch infinite alternate;
+}
+/*description*/
+.about_container p {
+	border: rgb(0, 204, 255) solid 1px;
+	font-size: 20px;
+}
+.about_container p:hover {
+	animation: 0.25s glitch;
+}
+
+@media (max-width: 1000px) {
+	.about_container {
+		width: auto;
+		margin: 0 15px;
+	}
+	.i_am_container {
+		flex-wrap: wrap;
+	}
+	.i_am {
+		font-size: 30px;
+	}
+	.about_container p {
+		font-size: 15px;
+	}
+	.about_hero {
+		padding: 15px 0;
+		gap: 15px;
+	}
+}

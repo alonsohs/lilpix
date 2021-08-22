@@ -1,262 +1,216 @@
 .ham {
-    position: fixed;
-    cursor: pointer;
-    font-size: 30px;
-    top: 30px;
-    right: 30px;
-    background-color: transparent;
-    display: none;
-    z-index: 999;
+	position: fixed;
+	cursor: pointer;
+	font-size: 30px;
+	top: 30px;
+	right: 30px;
+	background-color: transparent;
+	display: none;
+	z-index: 99;
 }
 .ham span {
-    background-color: #ffffff;
-    display: block;
-    height: 5px;
-    width: 30px;
-    margin: 5px auto;
-    border-radius: 2px;
+	background-color: #ffffff;
+	display: block;
+	height: 5px;
+	width: 30px;
+	margin: 5px auto;
+	border-radius: 2px;
 }
 
-.container {
-    width: 100%;
-    height: 20vh;
-    max-height: 20vh;
-    margin: 0;
-    position: fixed;
-    z-index: 2;
+/*Navbar Container Main*/
+.nav__bar {
+	width: auto;
+	height: 20vh;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #181818;
+	border: solid 2px #181818;
+	z-index: 10;
+	margin: 0;
+	padding: 5px 15px;
+	justify-content: center;
+	align-items: center;
 }
-/*NAVIGATION MAIN*/
 .nav-main-all {
-    align-items: center;
-    background-color: #181818;
-    margin-left: 0;
-    margin-right: 0;
-    height: 20vh;
-    max-height: 20vh;
+	display: block;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
 }
-
-/*NAVIGATION UP (Logo, Work, About, Skills, Contact)*/
-.nav-main-up {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0 15px;
-    margin: 0;
-    height: 100px;
-}
-
-/*Logo lilpix*/
-.nav-brand {
-    align-items: center;
-    width: 200px;
-}
-.nav-brand-menu {
-    display: none;
-}
-
-.nav-brand:hover {
-    animation: logo 0.1s alternate;
-}
-
-@keyframes logo {
-    0% {
-        transform: translateX(-5px);
-    }
-    10% {
-        transform: translateX(-5px);
-    }
-    15% {
-        transform: translateY(-3px);
-    }
-
-    300% {
-        transform: translateY(3px);
-    }
-}
-
-/*NAV TABS (Work, About, Skills, Contact)*/
 .nav-main-up ul {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* center items vertically, in this case */
-    vertical-align: middle;
-}
-
-/*S E P A R A T E   NAV TABS (Work, About, Skills, Contact)*/
-
-.enlaces-menu li {
-    padding-left: 30px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.nav-main-up ul li a {
-    font-size: 30px;
-}
-
-.enlaces-menu li a {
-    text-decoration-line: none;
-    padding: 0;
+	display: flex;
+	text-decoration: none;
+	gap: 15px;
 }
 
 .enlaces-menu li a:hover {
-    text-decoration: line-through 5px solid #fd2155;
-    transition: 0.5s;
-    width: 100%;
+	text-decoration: line-through 5px solid #fd2155;
+	transition: 0.5s;
+	width: 100%;
 }
-/*END OF NAVIGATION UP*/
+.nav-brand {
+	width: 200px;
+}
+.nav-brand:hover {
+	animation: logo 0.1s alternate;
+}
+@keyframes logo {
+	0% {
+		transform: translateX(-5px);
+	}
+	10% {
+		transform: translateX(-5px);
+	}
+	15% {
+		transform: translateY(-3px);
+	}
+	300% {
+		transform: translateY(3px);
+	}
+}
 
-/*NAVIGATION DOWN (Slogan and Social Media)*/
+.nav-brand-menu {
+	display: none;
+}
+.nav-main-up {
+	font-size: 30px;
+}
 .nav-main-down {
-    padding: 0px 15px;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
+	margin: 10px 0;
 }
-
-/*SLOGAN (my little pixels)*/
-h6 {
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    letter-spacing: 7.75px;
-    margin-right: 15px;
+.nav-main-down,
+.nav-main-up {
+	display: flex;
+	justify-content: space-between;
 }
-
+.slogan {
+	font-size: 20px;
+	letter-spacing: 15px;
+	font-weight: inherit;
+}
 .slogan:hover {
-    animation: glitch 0.2s infinite;
+	animation: glitch 0.5s infinite alternate;
 }
-
-/*Social Media*/
-
-.nav-menu-social {
-    margin-right: 0px;
-}
-
 .nav-main-down ul {
-    display: flex;
-    align-items: center;
+	display: flex;
+	gap: 60px;
+
+	font-size: 20px;
+}
+.nav-main-down ul li {
+	cursor: pointer;
+}
+.nav-main-down ul li:hover {
+	animation: glitch 0.5s infinite alternate;
 }
 
-.nav-menu-social li {
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+.hr__nav {
+	border: 0;
+	height: 3px;
+	background-image: linear-gradient(
+		to right,
+		rgba(0, 225, 255, 0),
+		#05fdd8,
+		rgba(12, 135, 184, 0)
+	);
 }
 
-.nav-menu-social li:hover {
-    animation: glitch 0.5s infinite alternate;
+@media (max-width: 1000px) {
+	/*Btn ham (bars)*/
+	.ham {
+		display: block;
+		cursor: pointer;
+		position: fixed;
+		top: 5px;
+		right: 15px;
+		transition: 0.2s 0.1s;
+		z-index: 999;
+	}
+	/* Animaciones para btn ham and close*/
+	@keyframes muestraMenu {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	/* END Animaciones */
+	/*ENLACES MENU (Mon-To-Fri, Video Loop, Wallpaper, Archive, About)*/
+	.enlaces-menu.activado {
+		display: flex;
+		animation: muestraMenu 350ms ease-in-out both;
+		z-index: 10;
+		transform: translateY(0);
+	}
+	/*Animation for BTN CLOSE (X)*/
+	.br-1.animado {
+		transform: rotate(-45deg) translate(-7px, 6px);
+		background-color: #fd2155;
+	}
+	.br-2.animado {
+		opacity: 0;
+	}
+	.br-3.animado {
+		transform: rotate(45deg) translate(-8px, -8px);
+		background-color: #fd2155;
+	}
+	.ham.girar:hover {
+		transform: rotate(360deg);
+	}
+	/*END Animation for BTN CLOSE (X)*/
+	.nav-brand-menu {
+		border: solid 3px white;
+		padding: 15px;
+		align-items: center;
+		width: 200px;
+		display: block;
+	}
+	.enlaces-menu {
+		font-size: 40px;
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		background-color: #181818;
+		opacity: 0;
+		transition: opacity 1s ease-out;
+		width: 100%;
+		height: 100vh;
+		transform: translateY(-100vh);
+		z-index: -999;
+		transition: transform 0.5s ease-in-out;
+	}
 }
-/*END Nav main DOWN*/
-hr {
-    border: 2.5px solid #04bda1;
-    border-radius: 5px;
-}
 
-/*--------------------------------------------------------RESPONSIVE------------------------------------------------------*/
-@media (max-width: 1022px) {
-    /*Btn ham (bars)*/
-    .ham {
-        display: block;
-        cursor: pointer;
-        position: fixed;
-        top: 15px;
-        right: 25px;
-        transition: 0.2s 0.1s;
-        z-index: 999;
-    }
+@media (max-width: 650px) {
+	.nav-main-down {
+		align-items: center;
+	}
+	.slogan {
+		font-size: 15px;
+		letter-spacing: 10px;
+	}
+	.nav-main-down ul {
+		display: flex;
+		gap: 40px;
 
-    /* Animaciones para btn ham and close*/
-    @keyframes muestraMenu {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    /* END Animaciones */
-
-    /*ENLACES MENU (Mon-To-Fri, Video Loop, Wallpaper, Archive, About)*/
-    .enlaces-menu.activado {
-        display: flex;
-        animation: muestraMenu 350ms ease-in-out both;
-        z-index: 10;
-    }
-    /*Animation for BTN CLOSE (X)*/
-    .br-1.animado {
-        transform: rotate(-45deg) translate(-7px, 6px);
-        background-color: #fd2155;
-    }
-
-    .br-2.animado {
-        opacity: 0;
-    }
-    .br-3.animado {
-        transform: rotate(45deg) translate(-8px, -8px);
-        background-color: #fd2155;
-    }
-
-    .ham.girar:hover {
-        transform: rotate(360deg);
-    }
-
-    /*END Animation for BTN CLOSE (X)*/
-
-    .nav-brand-menu {
-        border: solid 3px white;
-        padding: 15px 30px;
-        align-items: center;
-        width: 250px;
-        display: block;
-    }
-    .enlaces-menu {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        background-color: #181818;
-        opacity: 0;
-        transition: opacity 1s ease-out;
-        width: 100%;
-        height: 100vh;
-        z-index: -9999;
-        transition: transform 0.5s ease-in-out;
-    }
-
-    .nav-main-up li {
-        padding: 30px 0;
-
-        letter-spacing: 10px;
-        border-bottom: none;
-    }
-
-    .nav-main-down {
-        font-size: 20px;
-    }
-    .nav-main-down ul {
-        display: flex;
-        align-items: center;
-    }
-
-    .nav-menu-social li {
-        display: flex;
-        align-items: center;
-        padding: 0 25px; /*separación hacia los lados de SOCIAL MEDIA ICONS*/
-    }
+		font-size: 15px;
+	}
+	.nav-brand {
+		width: 150px;
+	}
+	.nav__bar {
+		height: 20vh;
+	}
+	.nav-main-down {
+		margin: 15px 0;
+	}
 }
