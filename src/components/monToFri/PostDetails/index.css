@@ -1,0 +1,19 @@
+.tab__button__container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.tab__button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    width: 150px;
+}
+
+.tab__button.selected {
+    color:blueviolet;
+}
