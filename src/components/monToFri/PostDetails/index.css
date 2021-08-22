@@ -1,19 +1,23 @@
 .tab__button__container {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+	border: none;
 }
 .tab__button {
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    border-bottom: 2px solid black;
-    width: 150px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	border: none;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+	border-bottom: 2px solid black;
+	width: 150px;
+	background-color: #181818;
+	border-color: inherit;
+	border-style: none;
 }
 
 .tab__button.selected {
-    color:blueviolet;
+	color: blueviolet;
 }

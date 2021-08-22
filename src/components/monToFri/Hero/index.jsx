@@ -7,7 +7,7 @@ import CollageBehind from '../../../assets/img/MonToFri/Mon-to-Fri_PrincipalColl
 const Hero = ({ numberWeeks }) => {
 	return (
 		<div className="mon-to-fri_principal">
-			<header className="mon-to-fri_title">Mon-to-Fri</header>
+			<header className="section_header">Mon-to-Fri</header>
 			<hr className="hr_m-t-f" />
 			<div className="cover_counter">
 				<header className="mon-to-fri_counter">

@@ -28,45 +28,53 @@
 }
 /*Container of each image and info block*/
 .info_and_img {
-	width: 30%;
+	width: 350px;
 	height: auto;
 	text-align: center;
 	justify-content: center;
 	background-color: #181818;
+	border: yellow solid 3px;
 }
 /*Title and date*/
 .info_container {
 	border: #fff solid 3px;
-	height: 100px;
+	height: auto;
 	padding: 0;
 }
 /*Title*/
 .info_container .img_title {
 	border: yellow solid 3px;
-	font-size: 20px;
+	font-size: 35px;
 	width: auto;
-	height: 50px;
+	height: 60px;
+	overflow: auto;
 }
 /*Date*/
 .info_container .img_date {
+	border: solid red 2px;
 	font-size: 15px;
+	height: auto;
 }
 /*Image*/
 .img_png {
 	background-size: contain;
 	width: 100%;
+	height: auto;
 	overflow: hidden;
+	object-fit: contain;
+	border: #fff solid 2px;
 }
 /*Btn More*/
-.img_more_btn {
-	font-size: 30px;
+.more_btn {
+	font-size: 15px;
+	letter-spacing: 10px;
+	font-weight: bolder;
+	background-color: hotpink;
+	width: 100%;
+	height: 100%;
+	top: 0;
 }
 /*-----RESPONSIVE-----*/
-@media (max-width: 1176px) {
-	.info_and_img {
-		width: 45%;
-	}
-}
 
 @media (max-width: 1000px) {
 	.weeks_title {
@@ -84,7 +92,9 @@
 	.weeks_title p {
 		font-size: 15px;
 	}
+}
+@media (max-width: 500px) {
 	.info_and_img {
-		width: 90%;
+		height: auto;
 	}
 }

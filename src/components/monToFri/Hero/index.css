@@ -21,14 +21,14 @@
 	);
 }
 
-.mon-to-fri_title {
+.section_header {
 	font-size: 60px;
 	letter-spacing: 60px;
 	text-align: center;
 	color: #fff;
 }
 
-.mon-to-fri_title:hover {
+.section_header:hover {
 	animation: glitch 0.5s infinite alternate;
 }
 
@@ -195,7 +195,7 @@
 	}
 }
 @media (max-width: 1000px) {
-	.mon-to-fri_title {
+	.section_header {
 		font-size: 40px;
 		letter-spacing: 40px;
 		text-align: center;
@@ -203,7 +203,7 @@
 	}
 }
 @media (max-width: 650px) {
-	.mon-to-fri_title {
+	.section_header {
 		font-size: 30px;
 		letter-spacing: 20px;
 	}
