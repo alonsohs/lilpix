@@ -225,7 +225,7 @@ export const weeks = [
 			{
 				title: 'BLAST',
 				date: '16-Aug-2021',
-				url: 'https://i.imgur.com/onVtToF.png',
+				url: 'https://i.imgur.com/G3mVtcz.png',
 			},
 			{
 				title: 'ARCADE',

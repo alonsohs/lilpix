@@ -13,7 +13,7 @@ const Tab = ({ children, chageSelectedTab }) => {
 	return <button onClick={handleClick}>{children}</button>;
 };
 
-const PostDetails = (props) => {
+const PostDetails = ({ url, title, date }) => {
 	const [selected, setSelected] = useState(1);
 
 	const setSelectedTab = (newSelected) => {
@@ -43,7 +43,8 @@ const PostDetails = (props) => {
 
 			<Panel active>
 				<div className="tab__panel">
-					, ipsum dolor sit amet consectetur adipisicing elit. Minus.
+					<h1>{title}</h1>
+					<img src={url} alt="" className="download_img" />
 				</div>
 			</Panel>
 			<Panel>
