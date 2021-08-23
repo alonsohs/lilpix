@@ -17,7 +17,10 @@ const Post = ({ title, date, url }) => {
 	return (
 		<div className="info_and_img">
 			<div className="info_container">
-				<div className="img_title">{title}</div>
+				{title.length < 18 ? 
+					<div className="img_title">{title}</div> :
+					<marquee className="img_title">{title}</marquee>
+				}
 				<div className="img_date">{date}</div>
 			</div>
 
