@@ -9,6 +9,9 @@ export const weeks = [
 				title: '🐰🐰',
 				date: '28-Jun-2021',
 				url: 'https://i.imgur.com/4i40dAs.jpg',
+				behind: 'https://i.imgur.com/a6FUhdV.jpg',
+				resolution: '2400 x 3000',
+				size: '11.1',
 			},
 			{
 				title: 'THE QUESTION',
@@ -184,6 +187,7 @@ export const weeks = [
 				title: 'IN A VOYAGE',
 				date: '06-Aug-2021',
 				url: 'https://i.imgur.com/QTZp7d9.jpg',
+				behind: 'hola mundo',
 			},
 		],
 	},
@@ -231,16 +235,19 @@ export const weeks = [
 				title: 'ARCADE',
 				date: '17-Aug-2021',
 				url: 'https://i.imgur.com/5w2SKkO.png',
+				behind: 'hola mundo',
 			},
 			{
 				title: 'WHEN PIGS FLY',
 				date: '18-Aug-2021',
 				url: 'https://i.imgur.com/tcKWtFe.png',
+				behind: 'hola pig',
 			},
 			{
 				title: 'GAME BOT',
 				date: '19-Aug-2021',
 				url: 'https://i.imgur.com/rbAEsuo.png',
+				behind: 'hola mundo',
 			},
 			{
 				title: 'LOCKED',

@@ -13,7 +13,7 @@ const Tab = ({ children, chageSelectedTab }) => {
 	return <button onClick={handleClick}>{children}</button>;
 };
 
-const PostDetails = ({ url, title, date }) => {
+const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 	const [selected, setSelected] = useState(1);
 
 	const setSelectedTab = (newSelected) => {
@@ -26,50 +26,59 @@ const PostDetails = ({ url, title, date }) => {
 			<div className="tab__button__container">
 				<Tab chageSelectedTab={() => setSelectedTab(1)}>
 					<div className={`tab__button ${selected === 1 ? 'selected' : ''}`}>
-						Download
+						Download <i class="fas fa-arrow-down"></i>
 					</div>
 				</Tab>
 				<Tab chageSelectedTab={() => setSelectedTab(2)}>
 					<div className={`tab__button ${selected === 2 ? 'selected' : ''}`}>
-						Blender
+						Production notes <i class="fas fa-wrench"></i>
 					</div>
 				</Tab>
 				<Tab chageSelectedTab={() => setSelectedTab(3)}>
 					<div className={`tab__button ${selected === 3 ? 'selected' : ''}`}>
-						Info
+						Info <i class="fas fa-info"></i>
 					</div>
 				</Tab>
 			</div>
 
-			<Panel active>
+			<Panel>
 				<div className="tab__panel">
-					<h1>{title}</h1>
+					<div>
+						<h1>{title}</h1>
+						<p>{date}</p>
+					</div>
 					<img src={url} alt="" className="download_img" />
+					<div>
+						<i class="fas fa-arrow-down"></i>
+					</div>
 				</div>
 			</Panel>
 			<Panel>
 				<div className="tab__panel">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
-					numquam!
+					<img src={behind} alt="" className="production_notes" />
 				</div>
 			</Panel>
 			<Panel>
-				<div className="tab__panel">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-					veritatis placeat odit, ducimus et dicta aliquam. Eveniet, mollitia
-					dolorum. Repellendus in ea aliquam distinctio ab ipsam obcaecati vero
-					modi velit similique sint omnis dolor quaerat recusandae voluptatum
-					numquam blanditiis aliquid dolorem, iste suscipit illo. Corrupti
-					facilis consequuntur illum sit delectus deserunt dolore eius! Impedit
-					nobis ad et, fugiat quisquam labore eius laborum praesentium accusamus
-					incidunt ab facere ducimus! Cum soluta dolore pariatur laudantium
-					architecto nostrum. Architecto amet alias cumque soluta, libero
-					molestias temporibus delectus harum perferendis unde ducimus sequi
-					minima eius expedita eaque beatae dolorum magnam dignissimos enim.
-					Ipsa corporis dolor culpa explicabo harum pariatur delectus esse
-					minima repellat. Explicabo neque numquam exercitationem quasi sint
-					perspiciatis, tempore est maiores? Laborum neque perferendis eligendi
-					voluptate saepe! Neque fuga amet qui ad. Reiciendis!
+				<div className="tab__panel_3">
+					<div className="tools">
+						<h1>Tools used:</h1>
+						<div className="logos">
+							<img src="https://i.imgur.com/9dc8L08.png" alt="Blender" />
+							<img src="https://i.imgur.com/IdeZdjG.png" alt="Photoshop" />
+						</div>
+					</div>
+					<div className="resolution">
+						<div>
+							<h1>Original resolution:</h1>
+							<p>{resolution} px</p>
+						</div>
+					</div>
+					<div className="size">
+						<div>
+							<h1>File size:</h1>
+							<p>{size} MB</p>
+						</div>
+					</div>
 				</div>
 			</Panel>
 		</Tabs>

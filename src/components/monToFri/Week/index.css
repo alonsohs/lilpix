@@ -33,17 +33,14 @@
 	text-align: center;
 	justify-content: center;
 	background-color: #181818;
-	border: yellow solid 3px;
 }
 /*Title and date*/
 .info_container {
-	border: #fff solid 3px;
 	height: auto;
 	padding: 0;
 }
 /*Title*/
 .info_container .img_title {
-	border: yellow solid 3px;
 	font-size: 35px;
 	width: auto;
 	height: 60px;
@@ -51,7 +48,6 @@
 }
 /*Date*/
 .info_container .img_date {
-	border: solid red 2px;
 	font-size: 15px;
 	height: auto;
 }
@@ -62,18 +58,22 @@
 	height: auto;
 	overflow: hidden;
 	object-fit: contain;
-	border: #fff solid 2px;
 }
 
 /*Btn More*/
 .more_btn {
-	font-size: 15px;
-	letter-spacing: 10px;
-	font-weight: bolder;
-	background-color: hotpink;
+	font-size: 20px;
+	font-weight: 900;
+	background-color: #ffffff;
+	color: #000;
 	width: 100%;
 	height: 100%;
 	top: 0;
+	cursor: pointer;
+}
+.more_btn:hover {
+	background-color: #05fdd8;
+	color: white;
 }
 /*-----RESPONSIVE-----*/
 

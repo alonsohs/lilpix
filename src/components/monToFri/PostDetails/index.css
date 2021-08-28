@@ -6,22 +6,115 @@
 }
 .tab__button {
 	font-family: 'Oswald', sans-serif;
-	font-size: 30px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	font-size: 20px;
 	outline: none;
 	color: #fff;
 	cursor: pointer;
 	border-bottom: 2px solid rgb(255, 255, 255);
-	width: 150px;
+	width: auto;
 	background-color: #181818;
 	border-color: inherit;
+	border: yellow solid 3px;
+}
+.tab__button:hover {
+	color: #05fdd8;
+}
+.tab__panel {
+	display: flex;
+	border: #fff solid 3px;
+	justify-content: space-around;
+	height: 95%;
+	align-items: center;
+	padding: 15px;
+}
+.tab__panel div {
+	width: 275px;
+	border: #05fdd8 solid 3px;
+}
+.tab__panel h1 {
+	border: #05fdd8 solid 3px;
+	font-size: 50px;
+	text-align: center;
+	width: auto;
+}
+.tab__panel p {
+	font-size: 30px;
+	width: auto;
+}
+.tab__panel img {
+	border: rgb(0, 255, 42) solid 0.5px;
+}
+.tab__panel img {
+	position: relative;
+	max-width: 80%;
+	max-height: 90%;
+	width: auto;
+	height: auto;
+	object-fit: cover;
+}
+.tab__panel i {
+	border: #fff solid 2px;
+	font-size: 90px;
+	width: auto;
+	cursor: pointer;
 }
 
 .tab__button.selected {
-	color: blueviolet;
+	color: #05fdd8;
 }
 .tab__button__container button {
 	border: none;
 }
-.download_img {
-	height: 50vh;
+.tab__panel_3 {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	border: yellowgreen solid 5px;
+	height: 80vh;
+}
+.tools {
+	width: auto;
+	border: #05fdd8 solid 4px;
+	align-items: center;
+	justify-content: center;
+}
+.logos {
+	border: red solid 3px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.logos img {
+	height: 20vh;
+	width: auto;
+	border: rgb(114, 0, 0) solid 3px;
+	margin: 0 30px;
+	background-size: contain;
+}
+.resolution {
+	border: rgb(0, 255, 255) solid 3px;
+	height: 25vh;
+	position: relative;
+}
+.resolution div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.size {
+	height: 25vh;
+	position: relative;
+}
+.size div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
