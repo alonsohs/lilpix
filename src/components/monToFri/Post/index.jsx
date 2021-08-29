@@ -17,7 +17,7 @@ const Post = ({ title, date, url, behind, size, resolution }) => {
 	return (
 		<div className="info_and_img">
 			<div className="info_container">
-				{title.length < 18 ? (
+				{title.length < 20 ? (
 					<div className="img_title">{title}</div>
 				) : (
 					<marquee className="img_title">{title}</marquee>

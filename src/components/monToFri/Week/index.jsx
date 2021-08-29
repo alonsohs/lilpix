@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css';
-
 import Post from '../Post';
 
 const Week = ({ number, title, posts, resolution, size }) => {

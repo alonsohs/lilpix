@@ -1,16 +1,32 @@
 .about_hero {
+	width: 100%;
+	height: 80vh;
+	border: #05fdd8 solid 5px;
+}
+.about {
 	padding: 30px;
 	gap: 30px;
 	display: flex;
 	border: hotpink solid 5px;
 	width: 100%;
-	height: 80vh;
+	height: 65vh;
 
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	position: relative;
 	top: 0;
+}
+.about_hero .backimg {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	object-fit: cover;
+	position: absolute;
+	z-index: -10;
+	opacity: 0.5;
 }
 
 /*COVER IMG*/
@@ -87,11 +103,18 @@
 		width: auto;
 		margin: 0 15px;
 	}
+	.MyselfPic {
+		width: 170px;
+		height: 170px;
+	}
 	.i_am_container {
 		flex-wrap: wrap;
 	}
 	.i_am {
 		font-size: 30px;
+	}
+	.about {
+		height: 70vh;
 	}
 	.about_container p {
 		font-size: 15px;

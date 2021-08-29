@@ -256,4 +256,35 @@ export const weeks = [
 			},
 		],
 	},
+	{
+		number: 9,
+		title: '',
+		posts: [
+			{
+				title: 'FROG DOMINATION 🐸',
+				date: '23-Aug-2021',
+				url: 'https://i.imgur.com/KKh5lRv.png',
+			},
+			{
+				title: 'HEAVY MACHINE GUN!',
+				date: '24-Aug-2021',
+				url: 'https://i.imgur.com/EkNmLIb.png',
+			},
+			{
+				title: 'ENCAPSULATED',
+				date: '25-Aug-2021',
+				url: 'https://i.imgur.com/hfzqbUs.png',
+			},
+			{
+				title: 'IMMUNITY',
+				date: '26-Aug-2021',
+				url: 'https://i.imgur.com/w8z2oVk.png',
+			},
+			{
+				title: 'VUELO',
+				date: '27-Aug-2021',
+				url: 'https://i.imgur.com/PHAhskT.png',
+			},
+		],
+	},
 ];
