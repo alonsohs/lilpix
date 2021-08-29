@@ -16,9 +16,11 @@ const Tab = ({ children, chageSelectedTab }) => {
 const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 	const [selected, setSelected] = useState(1);
 
+	const [activeFirst, setActiveFirst] = useState(true);
 	const setSelectedTab = (newSelected) => {
 		setSelected(newSelected);
-		console.log(selected);
+		console.log(selected)
+		setActiveFirst(false)
 	};
 
 	return (
@@ -41,7 +43,7 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 				</Tab>
 			</div>
 
-			<Panel>
+			<Panel active={activeFirst}>
 				<div className="tab__panel">
 					<div>
 						<h1>{title}</h1>
