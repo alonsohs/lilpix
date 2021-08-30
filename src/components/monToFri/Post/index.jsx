@@ -25,7 +25,7 @@ const Post = ({ title, date, url, behind, size, resolution }) => {
 				<div className="img_date">{date}</div>
 			</div>
 
-			<img className="img_png" src={url} />
+			<img className="img_png" src={url} loading={"lazy"} />
 
 			<button className="more_btn" onClick={openModal}>
 				MORE

@@ -28,17 +28,17 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 			<div className="tab__button__container">
 				<Tab chageSelectedTab={() => setSelectedTab(1)}>
 					<div className={`tab__button ${selected === 1 ? 'selected' : ''}`}>
-						Download <i class="fas fa-arrow-down"></i>
+						Download <i className="fas fa-arrow-down"></i>
 					</div>
 				</Tab>
 				<Tab chageSelectedTab={() => setSelectedTab(2)}>
 					<div className={`tab__button ${selected === 2 ? 'selected' : ''}`}>
-						Production notes <i class="fas fa-wrench"></i>
+						Production notes <i className="fas fa-wrench"></i>
 					</div>
 				</Tab>
 				<Tab chageSelectedTab={() => setSelectedTab(3)}>
 					<div className={`tab__button ${selected === 3 ? 'selected' : ''}`}>
-						Info <i class="fas fa-info"></i>
+						Info <i className="fas fa-info"></i>
 					</div>
 				</Tab>
 			</div>
@@ -49,15 +49,15 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 						<h1>{title}</h1>
 						<p>{date}</p>
 					</div>
-					<img src={url} alt="" className="download_img" />
+					<img src={url} alt="" className="download_img"/>
 					<div>
-						<i class="fas fa-arrow-down"></i>
+						<i className="fas fa-arrow-down"></i>
 					</div>
 				</div>
 			</Panel>
 			<Panel>
 				<div className="tab__panel">
-					<img src={behind} alt="" className="production_notes" />
+					<img src={behind} alt="" className="production_notes"/>
 				</div>
 			</Panel>
 			<Panel>
@@ -65,8 +65,14 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 					<div className="tools">
 						<h1>Tools used:</h1>
 						<div className="logos">
-							<img src="https://i.imgur.com/9dc8L08.png" alt="Blender" />
-							<img src="https://i.imgur.com/IdeZdjG.png" alt="Photoshop" />
+							<picture>
+								<img src="https://i.imgur.com/9dc8L08.png" alt="Blender"/>
+								<caption>Blender</caption>
+							</picture>
+							<picture>
+								<img src="https://i.imgur.com/IdeZdjG.png" alt="Photoshop"/>
+								<caption>Photoshop</caption>
+							</picture>
 						</div>
 					</div>
 					<div className="resolution">

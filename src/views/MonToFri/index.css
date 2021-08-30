@@ -1,0 +1,39 @@
+.weeks__nav {
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+    .mon-to-fri__layout {
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: 1fr 100px;
+    }
+
+    .weeks__nav {
+        display: flex;
+        border: 1px solid white;
+        padding: 1rem;
+        align-items: start;
+        position: relative;
+
+    }
+
+    .weeks__nav ul {
+        position: -webkit-sticky;
+        position: sticky;
+        /*separacion del top del menu*/
+        top:25vh;
+    }
+
+    .weeks__nav li {
+        margin: 1rem 0;
+    }
+
+    .weeks__nav li a {
+        transition: color .4s ease;
+    }
+
+    .weeks__nav li.active a{
+        color:red;
+
+    }
+}

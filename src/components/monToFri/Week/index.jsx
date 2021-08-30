@@ -4,7 +4,7 @@ import Post from '../Post';
 
 const Week = ({ number, title, posts, resolution, size }) => {
 	return (
-		<div className="week_container_main">
+		<div className="week_container_main week" id={`week_${number}`}>
 			<header className="weeks_title">
 				WEEk #{number}
 				<p> {title}</p>
