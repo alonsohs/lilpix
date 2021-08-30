@@ -20,7 +20,6 @@
 /*Navbar Container Main*/
 .nav__bar {
 	width: auto;
-	height: 20vh;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -206,9 +205,6 @@
 	}
 	.nav-brand {
 		width: 150px;
-	}
-	.nav__bar {
-		height: 20vh;
 	}
 	.nav-main-down {
 		margin: 15px 0;

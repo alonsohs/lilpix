@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import BackgroundVideo from '../../assets/video/header_video_tunnel_loop.webm';
 import './index.css';
 
 const Home = () => {
+	useEffect(() => {
+		document.body.classList.add('home')
+
+		return () => {
+			document.body.classList.remove('home')
+		}
+	},[])
+
 	return (
 		<div className="header-video">
 			<video autoPlay muted loop className="tunnel">

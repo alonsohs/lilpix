@@ -4,8 +4,7 @@
 
 .header-video {
 	width: 100%;
-	height: 80vh;
-	top: 0;
+	height: 100%;
 }
 
 .tunnel {
@@ -176,9 +175,7 @@
 	.what-i-pretend {
 		font-size: 15px;
 	}
-	.header-video {
-		height: 80vh;
-	}
+
 	.showcase {
 		margin: 0 15px;
 		top: 21vh;

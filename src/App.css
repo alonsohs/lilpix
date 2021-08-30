@@ -6,13 +6,34 @@
 }
 
 /*Principal Style of entire WebSite and text*/
+html {
+	height: 100%;
+	margin: 0;
+}
+
 body {
 	font-family: 'Oswald', sans-serif;
-	height: 100%;
+	margin: 0;
 	background-color: #1d1d1d;
 	color: #ffffff;
 
 	cursor: auto;
+}
+
+body.home {
+	max-height: 100vh;
+	height: 100%;
+	overflow: hidden;
+}
+
+#root {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	height: 100%;
 }
 
 a {
