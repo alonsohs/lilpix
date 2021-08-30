@@ -7,6 +7,8 @@ import './index.css'
 
 import { weeks } from '../../../data';
 
+import {setHighlightedMenu} from "../../utils/HighligthMenu";
+
 const MonToFri = () => {
 	const numberWeeks = weeks.length;
 
@@ -14,23 +16,8 @@ const MonToFri = () => {
 		const sections = document.querySelectorAll('.week')
 		const navLi = document.querySelectorAll('.weeks__li')
 
-		window.addEventListener('scroll', () => {
-			let current = ''
-			sections.forEach(section => {
-				const sectionTop = section.offsetTop
-				const sectionHeight = section.clientHeight
-				if (pageYOffset >= sectionTop){
-					current = section.getAttribute('id')
-				}
-			})
+		window.addEventListener('scroll', () => setHighlightedMenu(sections, navLi))
 
-			navLi.forEach(li => {
-				li.classList.remove('active')
-				if(li.classList.contains(current)) {
-					li.classList.add('active')
-				}
-			})
-		})
 	}, [])
 
 	return (
