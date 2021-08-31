@@ -4,6 +4,10 @@
 	gap: 60px;
 	border: none;
 }
+.tab__button__container button {
+	background: none;
+}
+
 .tab__button {
 	font-family: 'Oswald', sans-serif;
 	font-weight: normal;
@@ -12,11 +16,11 @@
 	outline: none;
 	color: #fff;
 	cursor: pointer;
-	border-bottom: 2px solid rgb(255, 255, 255);
 	width: auto;
 	background-color: #181818;
 	border-color: inherit;
-	border: yellow solid 3px;
+
+
 }
 .tab__button:hover {
 	color: #05fdd8;
@@ -24,10 +28,10 @@
 .tab__panel {
 	display: flex;
 	border: #fff solid 3px;
-	justify-content: space-around;
-	height: 95%;
+	justify-content: center;
 	align-items: center;
 	padding: 15px;
+	height: 80vh;
 }
 .tab__panel div {
 	width: 275px;
@@ -44,12 +48,12 @@
 	width: auto;
 }
 .tab__panel img {
+
 	border: rgb(0, 255, 42) solid 0.5px;
 }
 .tab__panel img {
 	position: relative;
-	max-width: 80%;
-	max-height: 90%;
+	max-width: 30vw;
 	width: auto;
 	height: auto;
 	object-fit: cover;
@@ -65,7 +69,9 @@
 	color: #05fdd8;
 }
 .tab__button__container button {
+
 	border: none;
+
 }
 .tab__panel_3 {
 	display: block;
@@ -81,19 +87,37 @@
 	justify-content: center;
 }
 .logos {
-	border: red solid 3px;
+	max-width: 100%;
+	max-height: 100%;
 	display: flex;
+	border: red solid 3px;
+
 	position: relative;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	height: auto;
 }
 .logos img {
-	height: 20vh;
+
 	width: auto;
 	border: rgb(114, 0, 0) solid 3px;
 	margin: 0 30px;
 	background-size: contain;
+	max-width: 10vw;
+	min-width: 10vw;
+	width: auto;
+	height: auto;
+	object-fit: cover;
+}
+.logos figcaption{
+	text-align: center;
+	border: #ff00c8 solid 2px;
+	font-size: auto;
+	font-weight: 500;
+	align-items: center;
+	justify-content: center;
+
 }
 .resolution {
 	border: rgb(0, 255, 255) solid 3px;
@@ -117,4 +141,30 @@
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+@media (max-width: 1000px){
+.tab__panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: auto;
+	align-items: center;
+	padding: 15px;
+}
+	.tab__panel i {
+		border: #fff solid 2px;
+		font-size: 45px;
+		width: auto;
+		cursor: pointer;
+	}
+	.tab__button p{
+		display: none;
+	}
+	.tab__button i{
+		display: flex;
+	}
+
+
+
+
 }

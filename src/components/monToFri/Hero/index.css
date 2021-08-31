@@ -27,6 +27,7 @@
 	text-align: center;
 	color: #fff;
 	background-color: #181818;
+	height: auto;
 }
 
 .section_header:hover {

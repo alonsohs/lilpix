@@ -28,17 +28,26 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 			<div className="tab__button__container">
 				<Tab chageSelectedTab={() => setSelectedTab(1)}>
 					<div className={`tab__button ${selected === 1 ? 'selected' : ''}`}>
-						Download <i className="fas fa-arrow-down"></i>
+						<p>
+							Download
+						</p>
+						 <i className="fas fa-arrow-down"></i>
 					</div>
 				</Tab>
 				<Tab chageSelectedTab={() => setSelectedTab(2)}>
 					<div className={`tab__button ${selected === 2 ? 'selected' : ''}`}>
-						Production notes <i className="fas fa-wrench"></i>
+						<p>
+							Production notes
+						</p>
+						<i className="fas fa-wrench"></i>
 					</div>
 				</Tab>
 				<Tab chageSelectedTab={() => setSelectedTab(3)}>
 					<div className={`tab__button ${selected === 3 ? 'selected' : ''}`}>
-						Info <i className="fas fa-info"></i>
+						<p>
+							Info
+						</p>
+						 <i className="fas fa-info"></i>
 					</div>
 				</Tab>
 			</div>
@@ -56,7 +65,7 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 				</div>
 			</Panel>
 			<Panel>
-				<div className="tab__panel">
+				<div className="tab__panel_2">
 					<img src={behind} alt="" className="production_notes"/>
 				</div>
 			</Panel>
@@ -66,12 +75,12 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 						<h1>Tools used:</h1>
 						<div className="logos">
 							<picture>
-								<img src="https://i.imgur.com/9dc8L08.png" alt="Blender"/>
-								<caption>Blender</caption>
+								<img src="https://i.imgur.com/3yeKkyO.png" alt="Blender"/>
+								<figcaption>Blender</figcaption>
 							</picture>
 							<picture>
-								<img src="https://i.imgur.com/IdeZdjG.png" alt="Photoshop"/>
-								<caption>Photoshop</caption>
+								<img src="https://i.imgur.com/G1Pn1Bj.png" alt="Photoshop"/>
+								<figcaption>Photoshop</figcaption>
 							</picture>
 						</div>
 					</div>
