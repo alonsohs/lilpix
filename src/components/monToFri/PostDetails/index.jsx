@@ -54,11 +54,14 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 
 			<Panel active={activeFirst}>
 				<div className="tab__panel">
-					<div>
+					<div className="tab__panel__title">
 						<h1>{title}</h1>
 						<p>{date}</p>
 					</div>
-					<img src={url} alt="" className="download_img"/>
+					<div className="download_img">
+						<img src={url} alt="" />
+					</div>
+
 					<div>
 						<i className="fas fa-arrow-down"></i>
 					</div>

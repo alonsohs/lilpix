@@ -2,18 +2,18 @@ export const photography = [
     {
         id: 1,
         url: 'https://i.imgur.com/vt9d2Pb.jpg',
-        date: '18-08-2021',
-        description: 'Girls are the stars of the photonic history. Girls are the stars of the photonic history.'
+        date: '08-Nov-2018',
+        description: '"Vintage bicycle of a friend."'
     }, {
         id: 2,
-        url: 'https://i.imgur.com/vt9d2Pb.jpg',
-        date: '',
-        description: ''
+        url: 'https://i.imgur.com/96hZIA4.jpg',
+        date: '09-Nov-2018',
+        description: '"Just a plant."'
     }, {
         id: 3,
-        url: 'https://i.imgur.com/vt9d2Pb.jpg',
-        date: '',
-        description: ''
+        url: 'https://i.imgur.com/psxsrL4.jpg',
+        date: '11-Nov-2018',
+        description: '"Interesting house close to where I live."'
     }, {
         id: 4,
         url: 'https://i.imgur.com/vt9d2Pb.jpg',
