@@ -1,4 +1,8 @@
 /*MON-TO-FRI*/
+.mon-to-fri_principal{
+
+	height: auto;
+}
 
 .cover_counter {
 	display: flex;
@@ -26,7 +30,7 @@
 	letter-spacing: 60px;
 	text-align: center;
 	color: #fff;
-	background-color: #181818;
+	background-color: rgb(24, 24, 24);
 	height: auto;
 }
 
@@ -35,8 +39,8 @@
 }
 
 .mon-to-fri_cover {
-	width: 500px;
-	height: 500px;
+	width: 350px;
+	height: 350px;
 	position: relative;
 }
 /*COVER IMG*/
@@ -140,18 +144,20 @@
 /*WEEKS COUNTER*/
 .mon-to-fri_counter {
 	width: 300px;
-	display: table;
+	border: #05fdd8 solid 3px;
 
+	display: table;
 	justify-content: center;
 }
 .num_weeks {
-	font-size: 40px;
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	font-size: 72px;
+	font-size: 70px;
+
 }
 .num_weeks h2 {
+	text-align: center;
 	background: -webkit-linear-gradient(#00ffd956, #05fdd8);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -193,8 +199,8 @@
 	.mon-to-fri_cover {
 		width: auto;
 		height: auto;
-		max-width: 700px;
-		max-height: 700px;
+		max-width: 500px;
+		max-height: 500px;
 	}
 }
 @media (max-width: 1000px) {
@@ -211,7 +217,7 @@
 		letter-spacing: 20px;
 	}
 	.num_weeks {
-		font-size: 25px;
+		font-size: 30px;
 	}
 	.mon-to-fri_description {
 		font-size: 15px;

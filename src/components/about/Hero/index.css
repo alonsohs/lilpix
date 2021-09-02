@@ -1,12 +1,12 @@
 .about_hero {
-	width: 100%;
+	width: auto;
 	height: 100%;
 	border: #05fdd8 solid 5px;
 	overflow: hidden;
+	justify-content: center;
 }
 .about {
 	padding: 0;
-	gap: 10px;
 	display: flex;
 	border: #ffe600 solid 5px;
 	width: 100%;
@@ -14,7 +14,7 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	position: relative;
+	overflow: hidden;
 	top: 0;
 }
 .about_hero .backimg {
@@ -32,10 +32,11 @@
 /*COVER IMG*/
 .MyselfPic {
 	border: 2.5px solid #ff00c8;
-
 	width: 300px;
 	height: 300px;
 	position: relative;
+	bottom: 40px;
+
 }
 .MyselfPic .me_front {
 	background-size: contain;
@@ -68,9 +69,11 @@
 /*I'm Jesús Hernández*/
 .about_container {
 	display: block;
-	width: 700px;
+	width: 60vw;
 	height: auto;
 	border: rgb(142, 75, 255) solid 2px;
+
+
 }
 .i_am_container {
 	display: flex;
@@ -100,12 +103,13 @@
 
 @media (max-width: 1000px) {
 	.about_container {
-		width: auto;
 		padding: 0 5px;
+
 	}
 	.MyselfPic {
 		width: 170px;
 		height: 170px;
+		bottom: 0;
 	}
 	.i_am_container {
 		flex-wrap: wrap;
@@ -116,6 +120,23 @@
 
 	.about_container p {
 		font-size: 12.5px;
+	}
+
+}
+@media (max-width: 500px){
+	.about{
+		justify-content: center;
+		align-items: center;
+	}
+	.i_am {
+		font-size: 20px;
+	}
+
+	.about_container{
+		width: 100%;
+	}
+	.about_container p{
+		font-size: 10px;
 	}
 
 }

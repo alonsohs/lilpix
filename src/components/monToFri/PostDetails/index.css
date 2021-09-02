@@ -69,7 +69,7 @@
 	margin: auto;
 }
 .tab__panel i {
-	border: #fff solid 2px;
+	border-bottom: #fff solid 5px;
 	font-size: 90px;
 	width: auto;
 	cursor: pointer;
@@ -178,7 +178,7 @@ position: relative;
 }
 
 	.tab__panel i {
-		border: #fff solid 2px;
+		border-bottom: #fff solid 5px;
 		font-size: 45px;
 		width: auto;
 		cursor: pointer;

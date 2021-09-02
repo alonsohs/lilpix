@@ -62,7 +62,7 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 						<img src={url} alt="" />
 					</div>
 
-					<div>
+					<div className="download__icon">
 						<i className="fas fa-arrow-down"></i>
 					</div>
 				</div>

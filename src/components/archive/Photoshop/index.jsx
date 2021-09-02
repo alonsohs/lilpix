@@ -1,5 +1,5 @@
 import React from 'react';
-import Gallery from '../Gallery/Gallery';
+
 import {photoshop} from "../../../../data_ps";
 
 const Photoshop = () => {

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from './views/Home/home';
 import MonToFri from './views/MonToFri';
+import Wallpapers from "./views/Wallpapers";
 import About from './views/About';
 import Archive from './views/Archive';
 function App() {
@@ -19,6 +20,9 @@ function App() {
 						</Route>
 						<Route exact path="/">
 							<Home />
+						</Route>
+						<Route exact path="/wallpapers">
+							<Wallpapers />
 						</Route>
 						<Route exact path="/archive">
 							<Archive />

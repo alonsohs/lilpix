@@ -44,7 +44,7 @@ const NavBar = () => {
 							</Link>
 						</li>
 						<li>
-							<Link to="#" onClick={toggleMenu}>
+							<Link to="/wallpapers" onClick={toggleMenu}>
 								Wallpapers
 							</Link>
 						</li>
