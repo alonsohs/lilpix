@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import ReactPlayer from 'react-player'
 import BackgroundVideo from '../../assets/video/header_video_tunnel_loop.webm';
 import './index.css';
 
@@ -11,11 +12,32 @@ const Home = () => {
 		}
 	},[])
 
+	const handleOnReady = (e) => {
+		console.log(e)
+	}
+	const handleOnProgress = (e) => {
+		console.log(e)
+	}
+
 	return (
 		<div className="header-video">
-			<video autoPlay muted loop className="tunnel">
-				<source src={BackgroundVideo} />
-			</video>
+			<ReactPlayer
+				playing={true}
+				onStart={handleOnReady}
+				width={'100%'}
+				height={'100%'}
+				url={BackgroundVideo}
+				config={{
+					file: {
+						forceVideo: true,
+						attributes: {
+							loop: true,
+							muted: true,
+							className:'tunnel'
+						}
+					}
+				}}
+			/>
 			<div id="particles-js"></div>
 			<header className="showcase">
 				<h2 className="not-artistic">Not artistic,</h2>
