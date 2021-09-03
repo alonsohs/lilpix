@@ -1,5 +1,4 @@
 .photography_container {
-	border: blue solid 5px;
 	width: 100%;
 	padding: 0 15px;
 }
@@ -7,7 +6,6 @@
 .gallery {
 	columns: 4 170px;
 	column-gap: .5em;
-	border: #ff00c8 solid 5px;
 }
 
 .gallery-item {

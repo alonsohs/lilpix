@@ -1,7 +1,7 @@
 .weeks__nav {
     display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1250px) {
     .mon-to-fri__layout {
 
         display: grid;
