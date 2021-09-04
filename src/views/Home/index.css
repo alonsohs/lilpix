@@ -2,9 +2,34 @@
 
 /*Container Video and Pharase*/
 
+body.opening .showcase {
+	display: none;
+}
+
+body.home .nav__bar {
+	position: absolute;
+	left: 0;
+	right: 0;
+	transition: all 2.5s linear;
+	z-index: 30;
+}
+
+body.hide-content .nav__bar {
+	top: -30vh;
+}
+
+body.hide-content .showcase {
+	left: -100%;
+}
+
+body.hide-content .tunnel {
+	opacity: 1;
+}
+
 .header-video {
 	width: 100%;
 	height: 100%;
+	position: relative;
 }
 
 .tunnel {
@@ -19,18 +44,31 @@
 	overflow: hidden;
 	/*top: 0;*/
 	/*left: 0;*/
+	opacity: .7;
+	transition: opacity 2.5s linear;
+}
+
+.particles {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 10;
 }
 
 /*PRINCIPAL PHRASE (Not artistic, unrealistic, unsafe a little, not those things)*/
 .showcase {
 	position: absolute;
 	display: flex;
-	top: 135px;
+	top: calc(50vh - 175px);
 	left: 0;
 	flex-wrap: wrap;
 	margin: 0 15px;
 	width: 700px; /* horizontal ------ */
 	height: 350px; /* vertical | */
+	transition: all 2.5s linear;
+	z-index: 20;
 }
 
 .showcase h2 {
@@ -185,5 +223,76 @@
 		max-height: 99.3%;
 		width: 150%;
 		height: 150%;
+	}
+}
+
+.splash-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 100;
+	background-color: #1d1d1d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.splash-screen__inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.loading h2 {
+	margin-bottom: 1rem;
+}
+
+.loading span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 1em;
+	height: 1em;
+	margin: .30em;
+	background: #fff;
+	animation: loading 1s infinite alternate;
+}
+
+/*
+ * Dots Colors
+ * Smarter targeting vs nth-of-type?
+ */
+.loading span:nth-of-type(2) {
+	animation-delay: 0.2s;
+}
+.loading span:nth-of-type(3) {
+	animation-delay: 0.4s;
+}
+.loading span:nth-of-type(4) {
+	animation-delay: 0.6s;
+}
+.loading span:nth-of-type(5) {
+	animation-delay: 0.8s;
+}
+.loading span:nth-of-type(6) {
+	animation-delay: 1.0s;
+}
+.loading span:nth-of-type(7) {
+	animation-delay: 1.2s;
+}
+
+/*
+ * Animation keyframes
+ * Use transition opacity instead of keyframes?
+ */
+@keyframes loading {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }
