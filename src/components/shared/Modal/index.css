@@ -37,3 +37,10 @@
 .display-none {
 	display: none;
 }
+@media (max-width: 1000px){
+	.close__button{
+		font-size: 30px ;
+
+	}
+
+

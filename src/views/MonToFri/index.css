@@ -1,16 +1,16 @@
 .weeks__nav {
     display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1250px) {
     .mon-to-fri__layout {
-        border: 1px solid red;
+
         display: grid;
         grid-template-columns: 1fr 100px;
     }
 
     .weeks__nav {
         display: flex;
-        border: 1px solid white;
+        border-left: 5px groove #fff;
         padding: 1rem;
         align-items: start;
         position: relative;
@@ -33,7 +33,7 @@
     }
 
     .weeks__nav li.active a{
-        color:red;
+        color:#ffe600;
 
     }
 }

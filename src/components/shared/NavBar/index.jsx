@@ -38,13 +38,9 @@ const NavBar = () => {
 								Mon-to-Fri
 							</Link>
 						</li>
+						
 						<li>
-							<Link to="#" onClick={toggleMenu}>
-								Video Loops
-							</Link>
-						</li>
-						<li>
-							<Link to="#" onClick={toggleMenu}>
+							<Link to="/wallpapers" onClick={toggleMenu}>
 								Wallpapers
 							</Link>
 						</li>
@@ -59,7 +55,7 @@ const NavBar = () => {
 							</Link>
 						</li>
 						<li>
-							<Link to="#" onClick={toggleMenu}>
+							<Link to="/contact" onClick={toggleMenu}>
 								Contact
 							</Link>
 						</li>

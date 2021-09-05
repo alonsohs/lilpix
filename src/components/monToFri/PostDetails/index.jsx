@@ -23,40 +23,67 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 		setActiveFirst(false)
 	};
 
+	const downloadImage =  async (imageSrc) => {
+		const image = await fetch(imageSrc)
+		const imageBlog = await image.blob()
+		const imageURL = URL.createObjectURL(imageBlog)
+
+		const link = document.createElement('a')
+		link.href = imageURL
+		link.download = 'image file name here'
+		document.body.appendChild(link)
+		link.click()
+		document.body.removeChild(link)
+	}
+
 	return (
 		<Tabs>
 			<div className="tab__button__container">
 				<Tab chageSelectedTab={() => setSelectedTab(1)}>
 					<div className={`tab__button ${selected === 1 ? 'selected' : ''}`}>
-						Download <i className="fas fa-arrow-down"></i>
+						<p>
+							Download
+						</p>
+						 <i className="fas fa-arrow-down"></i>
 					</div>
 				</Tab>
 				<Tab chageSelectedTab={() => setSelectedTab(2)}>
 					<div className={`tab__button ${selected === 2 ? 'selected' : ''}`}>
-						Production notes <i className="fas fa-wrench"></i>
+						<p>
+							Production notes
+						</p>
+						<i className="fas fa-wrench"></i>
 					</div>
 				</Tab>
 				<Tab chageSelectedTab={() => setSelectedTab(3)}>
 					<div className={`tab__button ${selected === 3 ? 'selected' : ''}`}>
-						Info <i className="fas fa-info"></i>
+						<p>
+							Info
+						</p>
+						 <i className="fas fa-info"></i>
 					</div>
 				</Tab>
 			</div>
 
 			<Panel active={activeFirst}>
 				<div className="tab__panel">
-					<div>
+					<div className="tab__panel__title">
 						<h1>{title}</h1>
 						<p>{date}</p>
 					</div>
-					<img src={url} alt="" className="download_img"/>
-					<div>
-						<i className="fas fa-arrow-down"></i>
+					<div className="download_img">
+						<img src={url} alt="" />
+					</div>
+
+					<div className="download__icon">
+						<button onClick={() => downloadImage(url)} className={"download__button"}>
+							<i className="fas fa-arrow-down"></i>
+						</button>
 					</div>
 				</div>
 			</Panel>
 			<Panel>
-				<div className="tab__panel">
+				<div className="tab__panel_2">
 					<img src={behind} alt="" className="production_notes"/>
 				</div>
 			</Panel>
@@ -66,12 +93,12 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 						<h1>Tools used:</h1>
 						<div className="logos">
 							<picture>
-								<img src="https://i.imgur.com/9dc8L08.png" alt="Blender"/>
-								<caption>Blender</caption>
+								<img src="https://i.imgur.com/3yeKkyO.png" alt="Blender"/>
+								<figcaption>Blender</figcaption>
 							</picture>
 							<picture>
-								<img src="https://i.imgur.com/IdeZdjG.png" alt="Photoshop"/>
-								<caption>Photoshop</caption>
+								<img src="https://i.imgur.com/G1Pn1Bj.png" alt="Photoshop"/>
+								<figcaption>Photoshop</figcaption>
 							</picture>
 						</div>
 					</div>

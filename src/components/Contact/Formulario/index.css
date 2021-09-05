@@ -1,0 +1,86 @@
+.formulario__container{
+
+    width: 100%;
+    height: auto;
+}
+.formulario {
+    max-width: 600px;
+    margin-top: 100px;
+    background: rgba(24, 24, 24, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+
+.formulario label {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.formulario input,
+.formulario textarea {
+
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+   outline: none;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #8D8D8D;
+    background-color: #2B2B2B;
+}
+
+.formulario input:focus, .formulario textarea:focus {
+    outline: none;
+
+
+
+}
+
+.formulario .error {
+    color: #fd2155;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.formulario button[type="submit"] {
+    display: block;
+    background: #008f79;
+    margin-top: 10px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    transition: .5s ease all;
+}
+
+.formulario button[type="submit"]:hover {
+    background: rgba(0, 255, 217, 0.75);
+}
+
+.formulario .exito {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    color: #05fdd8;
+}
+
+.formulario input[type="radio"] {
+    width: auto;
+}
+/*Animations*/
+

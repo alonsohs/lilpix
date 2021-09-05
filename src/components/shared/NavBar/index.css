@@ -1,9 +1,9 @@
 .ham {
-	position: fixed;
+	position: absolute;
 	cursor: pointer;
 	font-size: 30px;
 	top: 30px;
-	right: 30px;
+	right: 60px;
 	background-color: transparent;
 	display: none;
 	z-index: 99;
@@ -124,7 +124,7 @@
 		position: fixed;
 		top: 5px;
 		right: 15px;
-		transition: 0.2s 0.1s;
+		transition: transform 0.2s 0.1s, top 1.5s linear;
 		z-index: 999;
 	}
 	/* Animaciones para btn ham and close*/

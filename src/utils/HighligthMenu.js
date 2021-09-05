@@ -1,5 +1,5 @@
 export const setHighlightedMenu = (sections, navLi) => {
-    console.log('hello')
+
     let current = ''
     sections.forEach(section => {
         const sectionTop = section.offsetTop

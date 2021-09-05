@@ -1,6 +1,6 @@
 import React from 'react';
-import Gallery from '../Gallery/Gallery';
-import {photography} from "../../../../data_photos";
+
+import {photoshop} from "../../../../data_ps";
 
 const Photoshop = () => {
 	return (
@@ -12,7 +12,7 @@ const Photoshop = () => {
 			<hr className="hr_m-t-f"/>
 			<div className="photography_container">
 				<div className="gallery">
-					{photography.map(item => (
+					{photoshop.map(item => (
 						<div className="gallery-item" key={item.id}>
 							<div>
 								<img
