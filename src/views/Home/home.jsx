@@ -3,7 +3,6 @@ import ReactPlayer from 'react-player'
 import BackgroundVideo from '../../assets/video/header_video_tunnel_loop.webm';
 import BackgroundVideoIOS from '../../assets/video/header_video_tunnel_loop.mp4'
 import LogoGlitch from '../../assets/img/logo/lilpix_glitch.png'
-import Particles from "react-particles-js";
 
 import './index.css';
 
@@ -60,7 +59,7 @@ const Home = () => {
             setPlayVideo(true)
             setTimeout(() => {
                 document.body.classList.remove('hide-content')
-            }, 5500)
+            }, 2000)
             sessionStorage.setItem('showedOpening', 'true')
         }
     }, [loadingTime, showSplashScreen])
@@ -79,7 +78,7 @@ const Home = () => {
                 onReady={handleOnStart}
                 width={'100%'}
                 height={'100%'}
-                url={video}
+                url={video + '#t=3.5'}
                 config={{
                     file: {
                         forceVideo: true,
@@ -91,28 +90,6 @@ const Home = () => {
                         }
                     }
                 }}
-            />
-            <Particles
-                className={"particles"}
-                params={{
-                    "particles": {
-                        "number": {
-                            "value": particlesNumber
-                        },
-                        "size": {
-                            "value": 3
-                        }
-                    },
-                    "interactivity": {
-                        "events": {
-                            "onhover": {
-                                "enable": true,
-                                "mode": "repulse"
-                            }
-                        }
-                    }
-                }
-                }
             />
             <header className="showcase">
                 <h2 className="not-artistic">Not artistic,</h2>
