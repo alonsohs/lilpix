@@ -23,6 +23,19 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 		setActiveFirst(false)
 	};
 
+	const downloadImage =  async (imageSrc) => {
+		const image = await fetch(imageSrc)
+		const imageBlog = await image.blob()
+		const imageURL = URL.createObjectURL(imageBlog)
+
+		const link = document.createElement('a')
+		link.href = imageURL
+		link.download = 'image file name here'
+		document.body.appendChild(link)
+		link.click()
+		document.body.removeChild(link)
+	}
+
 	return (
 		<Tabs>
 			<div className="tab__button__container">
@@ -63,7 +76,9 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 					</div>
 
 					<div className="download__icon">
-						<i className="fas fa-arrow-down"></i>
+						<button onClick={() => downloadImage(url)} className={"download__button"}>
+							<i className="fas fa-arrow-down"></i>
+						</button>
 					</div>
 				</div>
 			</Panel>
