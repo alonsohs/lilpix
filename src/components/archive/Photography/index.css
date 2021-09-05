@@ -17,7 +17,8 @@
 	max-width: 100%;
 	display: block;
 	outline: #05fdd8 solid 2.5px;
-	outline-offset: -5px;
+	outline-offset: -5px
+
 }
 
 .gallery-image:hover {

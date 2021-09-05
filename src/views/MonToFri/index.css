@@ -10,7 +10,7 @@
 
     .weeks__nav {
         display: flex;
-        border: 1px solid white;
+        border-left: 5px groove #fff;
         padding: 1rem;
         align-items: start;
         position: relative;
