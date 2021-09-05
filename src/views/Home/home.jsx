@@ -10,6 +10,11 @@ import './index.css';
 const Home = () => {
     const screenWidth = window.screen.width
     const particlesNumber = (window.screen.width / 10) - ((screenWidth / 100) * 3);
+    let showOpening = true
+
+    if (sessionStorage.getItem('showedOpening')) {
+        showOpening = false
+    }
 
     let video = null
 
@@ -24,16 +29,27 @@ const Home = () => {
     const [playVideo, setPlayVideo] = useState(false);
 
     useEffect(() => {
-        document.body.classList.add('opening')
-        document.body.classList.add('hide-content')
         document.body.classList.add('home')
-
-        setTimeout(() => {
-            setLoadingTime(false)
-        }, 2500)
+        if (!showOpening) {
+            setPlayVideo(true)
+        }
 
         return () => {
             document.body.classList.remove('home')
+        }
+    }, [])
+
+    useEffect(() => {
+        if (showOpening) {
+            document.body.classList.add('opening')
+            document.body.classList.add('hide-content')
+
+            setTimeout(() => {
+                setLoadingTime(false)
+            }, 2500)
+        }
+
+        return () => {
             document.body.classList.remove('fade-in')
         }
     }, [])
@@ -44,9 +60,13 @@ const Home = () => {
             setPlayVideo(true)
             setTimeout(() => {
                 document.body.classList.remove('hide-content')
-            }, 5000)
+            }, 5500)
+            sessionStorage.setItem('showedOpening', 'true')
         }
     }, [loadingTime, showSplashScreen])
+
+
+
 
     const handleOnStart = () => {
         setShowSplashScreen(false)
@@ -102,7 +122,7 @@ const Home = () => {
 
                 <p className="what-i-pretend">digital artist in progress... :)</p>
             </header>
-            {(loadingTime || showSplashScreen) &&
+            {(loadingTime || showSplashScreen) && showOpening &&
             <div className={"splash-screen"}>
                 <div className={"splash-screen__inner"}>
                     <img src={LogoGlitch} alt="logo"/>
