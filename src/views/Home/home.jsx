@@ -1,12 +1,23 @@
 import React, {useEffect, useState} from 'react';
 import ReactPlayer from 'react-player'
 import BackgroundVideo from '../../assets/video/header_video_tunnel_loop.webm';
+import BackgroundVideoIOS from '../../assets/video/header_video_tunnel_loop.mp4'
 import LogoGlitch from '../../assets/img/logo/lilpix_glitch.png'
 import Particles from "react-particles-js";
 
 import './index.css';
 
 const Home = () => {
+    const screenWidth = window.screen.width
+    const particlesNumber = (window.screen.width / 10) - ((screenWidth / 100) * 3);
+
+    let video = null
+
+    if (navigator.userAgent.indexOf("Mac") != -1) {
+      video = BackgroundVideoIOS
+    } else {
+        video = BackgroundVideo
+    }
 
     const [showSplashScreen, setShowSplashScreen] = useState(true);
     const [loadingTime, setLoadingTime] = useState(true);
@@ -48,14 +59,15 @@ const Home = () => {
                 onReady={handleOnStart}
                 width={'100%'}
                 height={'100%'}
-                url={BackgroundVideo}
+                url={video}
                 config={{
                     file: {
                         forceVideo: true,
                         attributes: {
                             loop: true,
                             muted: true,
-                            className: 'tunnel'
+                            className: 'tunnel',
+                            playsInline: true,
                         }
                     }
                 }}
@@ -65,7 +77,7 @@ const Home = () => {
                 params={{
                     "particles": {
                         "number": {
-                            "value": 100
+                            "value": particlesNumber
                         },
                         "size": {
                             "value": 3

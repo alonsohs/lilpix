@@ -14,12 +14,17 @@ body.home .nav__bar {
 	z-index: 30;
 }
 
-body.hide-content .nav__bar {
+body.home .ham {
+	transition: top 2.5s linear;
+}
+
+body.hide-content .nav__bar,
+body.hide-content .ham{
 	top: -30vh;
 }
 
 body.hide-content .showcase {
-	left: -100%;
+	left: -100vw;
 }
 
 body.hide-content .tunnel {
@@ -64,7 +69,7 @@ body.hide-content .tunnel {
 	top: calc(50vh - 175px);
 	left: 0;
 	flex-wrap: wrap;
-	margin: 0 15px;
+	padding: 0 15px;
 	width: 700px; /* horizontal ------ */
 	height: 350px; /* vertical | */
 	transition: all 2.5s linear;
@@ -191,7 +196,7 @@ body.hide-content .tunnel {
 	/*(Not artistic, unrealistic, unsafe a litlle, not those things)*/
 
 	.showcase {
-		margin: 0 80px;
+		padding: 0 80px;
 		width: auto;
 		height: auto;
 		top: 100px;
@@ -215,7 +220,8 @@ body.hide-content .tunnel {
 	}
 
 	.showcase {
-		margin: 0 15px;
+		padding: 0 15px;
+		width: 100vw;
 		top: 21vh;
 	}
 	.tunnel {
@@ -223,6 +229,10 @@ body.hide-content .tunnel {
 		max-height: 99.3%;
 		width: 150%;
 		height: 150%;
+	}
+
+	.splash-screen__inner img {
+		width: 60vw;
 	}
 }
 
