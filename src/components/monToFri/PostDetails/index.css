@@ -142,8 +142,24 @@
 	background-color: transparent;
 	border: none;
 	color: white;
-	width: auto;
+    width: auto;
 }
+.download__button i{
+    font-size: 200px;
+}
+.download__icon .icon__mtf {
+
+    width: auto;
+    height: auto;
+    font-size: 100px;
+    border-bottom: #fff solid 5px;
+}
+
+
+}
+.icon__mtf{
+}
+
 
 .logos {
     max-width: 100%;
@@ -227,6 +243,9 @@
         font-size: 45px;
         width: auto;
         cursor: pointer;
+    }
+    .download__icon .icon__mtf {
+        font-size: 50px;
     }
 
     .tab__button p {
