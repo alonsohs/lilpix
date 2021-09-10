@@ -156,9 +156,7 @@
 }
 
 
-}
-.icon__mtf{
-}
+
 
 
 .logos {
@@ -178,13 +176,11 @@
     background-size: contain;
     max-width: 10vw;
     min-width: 100px;
-    width: auto;
     object-fit: cover;
 }
 
 .logos figcaption {
     text-align: center;
-    font-size: auto;
     font-weight: 500;
     align-items: center;
     justify-content: center;
@@ -217,8 +213,6 @@
 
 .size div {
     position: absolute;
-
-
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
