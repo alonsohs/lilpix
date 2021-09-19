@@ -62,7 +62,12 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
       <Panel active={activeFirst}>
         <div className="tab__panel">
           <div className="tab__panel__title">
-            <h1>{title}</h1>
+            {title.length < 20 ? (
+              <h1>{title}</h1>
+            ) : (
+              <h1 className="long_titles">{title}</h1>
+            )}
+
             <p>{date}</p>
           </div>
           <div className="download_img">
@@ -74,7 +79,7 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
               onClick={() => downloadImage(url)}
               className={"download__button"}
             >
-              <i className="fas fa-arrow-down icon__mtf"></i>
+              <i className="fas fa-arrow-down icon__mtf" />
             </button>
           </div>
         </div>

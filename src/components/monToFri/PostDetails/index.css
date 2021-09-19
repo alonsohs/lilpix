@@ -52,12 +52,14 @@
     width: 400px;
 }
 
-.tab__panel h1 {
+.tab__panel__title  {
     font-size: 50px;
     text-align: center;
     width: auto;
 }
-
+.tab__panel__title .long_titles{
+    font-size: 50px;
+}
 .tab__panel p {
     font-size: 30px;
     width: auto;
@@ -224,12 +226,16 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 95%;
+        gap: 30px;
+        height: 100%;
         align-items: center;
-        padding: 15px;
+        padding: 5px 0;
     }
+.tab__panel__title .long_titles{
+    font-size: 25px;
+}
     .tab__panel .download_img{
-        width: 275px;
+        width: 95%;
     }
 
     .tab__panel i {
@@ -240,6 +246,7 @@
     }
     .download__icon .icon__mtf {
         font-size: 50px;
+
     }
 
     .tab__button p {
