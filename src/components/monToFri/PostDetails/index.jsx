@@ -23,14 +23,14 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
     setActiveFirst(false);
   };
 
-  const downloadImage = async (imageSrc) => {
+  const downloadImage = async (imageSrc, title) => {
     const image = await fetch(imageSrc);
     const imageBlog = await image.blob();
     const imageURL = URL.createObjectURL(imageBlog);
 
     const link = document.createElement("a");
     link.href = imageURL;
-    link.download = "image file name here";
+    link.download = title;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -76,7 +76,7 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
 
           <div className="download__icon">
             <button
-              onClick={() => downloadImage(url)}
+              onClick={() => downloadImage(url, title)}
               className={"download__button"}
             >
               <i className="fas fa-arrow-down icon__mtf" />

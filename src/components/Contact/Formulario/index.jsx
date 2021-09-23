@@ -1,8 +1,34 @@
 import React, { useState } from "react";
 import "./index.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import emailjs from "emailjs-com";
+
 const Formulario = () => {
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
+
+  const sendEmail = (valores) => {
+    const form = {
+      name: valores.nombre,
+      email: valores.correo,
+      message: valores.mensaje,
+    };
+    emailjs
+      .send(
+        "service_f4ubixk",
+        "template_ca4sa0i",
+        form,
+        "user_bOMeB7vsY9nwkSf9lK97O"
+      )
+      .then(
+        (result) => {
+          console.log("exito");
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
+
   return (
     <>
       <div className="formulario__container">
@@ -34,10 +60,9 @@ const Formulario = () => {
             return errores;
           }}
           onSubmit={(valores, { resetForm }) => {
-            resetForm();
-            console.log("Formulario enviado");
+            sendEmail(valores);
             cambiarFormularioEnviado(true);
-            setTimeout(() => cambiarFormularioEnviado(false), 5000);
+            resetForm();
           }}
         >
           {({ errors }) => (
