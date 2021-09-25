@@ -24,4 +24,10 @@ export const wallpapers = [
     resolution: "2560 x 1440 px",
     size: "2.24 MB",
   },
+  {
+    id: 5,
+    url: "https://i.imgur.com/DnBvIzz.png",
+    resolution: "1920 x 1080 px",
+    size: "1.46 MB",
+  },
 ];
