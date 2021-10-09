@@ -1,9 +1,27 @@
 /*MON-TO-FRI*/
 .mon-to-fri_principal{
-
+background-color: #181818;
 	height: auto;
 }
+.mon-to-fri_principal .section_header{
+	color: #000;
+	font-size: 60px;
+	letter-spacing: 60px;
+	text-align: center;
+	background-color:#05fdd8;
+	height: auto;
 
+}
+
+.section_header{
+	color: #000;
+	font-size: 60px;
+	letter-spacing: 60px;
+	text-align: center;
+	background-color:#05fdd8;
+	height: auto;
+
+}
 .cover_counter {
 	display: flex;
 	flex-wrap: wrap;
@@ -16,23 +34,11 @@
 }
 .hr_m-t-f {
 	border: 0;
-	height: 3px;
-	background-image: linear-gradient(
-		to right,
-		rgba(0, 225, 255, 0),
-		#ffffff,
-		rgba(12, 135, 184, 0)
-	);
+	height: 5px;
+	background: #000;
 }
 
-.section_header {
-	font-size: 60px;
-	letter-spacing: 60px;
-	text-align: center;
-	color: #fff;
-	background-color: rgb(24, 24, 24);
-	height: auto;
-}
+
 
 .section_header:hover {
 	animation: glitch 0.5s infinite alternate;
@@ -140,12 +146,9 @@
 		opacity: 0.95;
 	}
 }
-
 /*WEEKS COUNTER*/
 .mon-to-fri_counter {
 	width: 300px;
-
-
 	display: table;
 	justify-content: center;
 }
@@ -154,11 +157,10 @@
 	vertical-align: middle;
 	text-align: center;
 	font-size: 70px;
-
 }
 .num_weeks h2 {
 	text-align: center;
-	background: -webkit-linear-gradient(#00ffd956, #05fdd8);
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.64), #ffffff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -175,6 +177,9 @@
 	display: table-cell;
 	vertical-align: middle;
 	text-align: justify;
+}
+.mon-to-fri_description .dhu{
+	color: #fd2155;
 }
 .more_btn {
 	width: 100%;
@@ -204,14 +209,19 @@
 	}
 }
 @media (max-width: 1000px) {
-	.section_header {
+
+	.mon-to-fri_principal .section_header{
 		font-size: 40px;
 		letter-spacing: 40px;
 		text-align: center;
-		color: #fff;
+		color: #000;
 	}
 }
 @media (max-width: 650px) {
+	.mon-to-fri_principal .section_header{
+		font-size: 30px;
+		letter-spacing: 20px;
+	}
 	.section_header {
 		font-size: 30px;
 		letter-spacing: 20px;

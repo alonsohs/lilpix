@@ -5,13 +5,15 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .modal-main {
 	position: fixed;
 	z-index: 101;
-	background: #181818;
+	background: #000;
+	border: #181818 5px;
+	border-style: outset;
 	width: 90%;
 	height: 90vh;
 	top: 50%;

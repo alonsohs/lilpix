@@ -20,8 +20,12 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-
+margin: 0 15px;
 	font-weight: 500;
+	font-style: italic;
+}
+.archive_info p{
+	font-size: 30px;
 }
 .hero_cover {
 	opacity: 0.5;
@@ -36,3 +40,22 @@
 	top: 0;
 	left: 0;
 }
+
+@media (max-width: 1000px) {
+	.archive_info h1, .archive_info p {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin: 0 15px;
+		font-weight: 500;
+		font-style: italic;
+	}
+	.archive_info h1{
+		font-size: 25px;
+	}
+	.archive_info p{
+		font-size: 15px;
+	}
+
+}
+

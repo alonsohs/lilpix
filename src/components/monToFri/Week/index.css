@@ -1,22 +1,27 @@
 /*---------------------------------WEEK # - CONTAINER-----------------------------------------------------------*/
 .week_container_main {
 	position: relative;
+background-color: #181818;
 }
-/*Title (WEEK ###) AND Subtutle(p)*/
+
 .weeks_title {
 	font-size: 40px;
 	letter-spacing: 40px;
+	font-weight: bolder;
 	text-align: center;
-	color: #fff;
-	background-color: #00ffd956;
+	color: #000;
+	border-bottom: #000 solid 5px;
+	border-top: #000 solid 5px;
+	background-color: #fd2155;
+
+
 }
 .weeks_title p {
 	font-size: 20px;
+	font-weight: lighter;
 	letter-spacing: 5px;
 }
-/*(----------------------------------)*/
 
-/*Info and Img*/
 .main_week_block {
 	margin: 0 30px;
 	display: flex;
@@ -25,6 +30,7 @@
 	justify-content: center;
 	padding: 30px;
 	gap: 60px;
+	background-color: #181818;
 }
 /*Container of each image and info block*/
 .info_and_img {
@@ -32,7 +38,8 @@
 	height: auto;
 	text-align: center;
 	justify-content: center;
-	background-color: #181818;
+	background-color: #000;
+	border: #f000 5px solid;
 }
 /*Title and date*/
 .info_container {
@@ -82,7 +89,7 @@
 		font-size: 40px;
 		letter-spacing: 35px;
 		text-align: center;
-		color: #fff;
+
 	}
 }
 @media (max-width: 650px) {

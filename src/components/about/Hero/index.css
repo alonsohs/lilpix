@@ -35,6 +35,8 @@
 	height: 300px;
 	position: relative;
 	bottom: 40px;
+	border: #000 groove 5px;
+	border-radius: 5px;
 
 }
 .MyselfPic .me_front {
@@ -56,7 +58,7 @@
 }
 /*Hover Images*/
 .MyselfPic:hover .me_back {
-	display: inline;
+	display: none;
 	opacity: 1;
 
 	-webkit-animation: fadeInFromNone 1.5s ease-out;
@@ -90,7 +92,7 @@
 }
 .i_am:hover {
 	color: #05fdd8;
-	animation: 0.3s glitch infinite alternate;
+
 }
 /*description*/
 .about_container p {

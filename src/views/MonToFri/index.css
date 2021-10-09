@@ -9,8 +9,9 @@
     }
 
     .weeks__nav {
+background-color: #fd2155;
         display: flex;
-        border-left: 5px groove #fff;
+        border-left: 5px groove #000;
         padding: 1rem;
         align-items: start;
         position: relative;
@@ -21,19 +22,24 @@
         position: -webkit-sticky;
         position: sticky;
         /*separacion del top del menu*/
-        top:25vh;
+        top:20vh;
+
     }
 
     .weeks__nav li {
         margin: 1rem 0;
+
     }
 
     .weeks__nav li a {
-        transition: color .4s ease;
+        transition: color 0.7s ease;
+        color: black;
+        font-weight: bold;
     }
 
     .weeks__nav li.active a{
-        color:#ffe600;
+        color:#fff;
+
 
     }
 }

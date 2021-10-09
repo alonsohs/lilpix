@@ -1,7 +1,5 @@
 export const weeks = [
-  //objeto semana 1
   {
-    //llave: valor
     number: 1,
     title: "the really true beginning",
     posts: [
@@ -598,6 +596,98 @@ export const weeks = [
         behind: "https://i.imgur.com/n9cM5NB.png",
         resolution: "2400 x 3000",
         size: "4.41",
+      },
+    ],
+  },
+  {
+    number: 14,
+    title: "",
+    posts: [
+      {
+        title: "KRAKEN GAME",
+        date: "27-Sep-2021",
+        url: "https://i.imgur.com/vx6vIYO.png",
+        behind: "https://i.imgur.com/mhkyziK.png",
+        resolution: "2400 x 3000",
+        size: "4.48",
+      },
+      {
+        title: "SPHERE RAY",
+        date: "28-Sep-2021",
+        url: "https://i.imgur.com/j7QlNQ5.png",
+        behind: "https://i.imgur.com/12wsHe7.png",
+        resolution: "2400 x 3000",
+        size: "1.78",
+      },
+      {
+        title: "HAPPY LOCKER",
+        date: "29-Sep-2021",
+        url: "https://i.imgur.com/XUDdyT9.png",
+        behind: "https://i.imgur.com/McTitEY.png",
+        resolution: "2400 x 3000",
+        size: "3.48",
+      },
+      {
+        title: "LASER BREATH",
+        date: "30-Sep-2021",
+        url: "https://i.imgur.com/gfhMWJZ.png",
+        behind: "https://i.imgur.com/wIF9gp2.png",
+        resolution: "2400 x 3000",
+        size: "4.57",
+      },
+      {
+        title: "CRYSTAL SPIDER 🕷️",
+        date: "01-Oct-2021",
+        url: "https://i.imgur.com/EIZ8rNY.png",
+        behind: "https://i.imgur.com/RLrJ0mc.png",
+        resolution: "2400 x 3000",
+        size: "4.67",
+      },
+    ],
+  },
+  {
+    number: 15,
+    title: "",
+    posts: [
+      {
+        title: "SKULL CRUSHER",
+        date: "04-Oct-2021",
+        url: "https://i.imgur.com/tpZBBaR.png",
+        behind: "https://i.imgur.com/coqPUxh.png",
+        resolution: "2400 x 3000",
+        size: "3.89",
+      },
+      {
+        title: "RAVEN",
+        date: "05-Oct-2021",
+        url: "https://i.imgur.com/mKVM1ls.png",
+        behind: "https://i.imgur.com/xAPQkS4.png",
+        resolution: "2400 x 3000",
+        size: "4.44",
+      },
+      {
+        title: "RETRO VIBES",
+        date: "06-Oct-2021",
+        url: "https://i.imgur.com/EZJP5VL.png",
+        behind: "https://i.imgur.com/gkqi1CA.png",
+        resolution: "2400 x 3000",
+        size: "2.27",
+      },
+      {
+        title: "BASE",
+        date: "07-Oct-2021",
+        url: "https://i.imgur.com/5jf2gNY.png",
+        behind: "https://i.imgur.com/RWE97as.png",
+        resolution: "2400 x 3000",
+        size: "2.50",
+      },
+      {
+        title: "RING",
+        date: "08-Oct-2021",
+        url: "https://i.imgur.com/y9KkYI1.png",
+        behind: "https://i.imgur.com/ACzH7L7.png",
+        resolution: "2400 x 3000",
+        size: "4.83",
       },
     ],
   },
