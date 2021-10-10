@@ -10,7 +10,7 @@ const Hero = () => {
         <hr className="hr_m-t-f" />
         <div className="about">
           <img
-            src="https://i.imgur.com/wXMTixZ.png"
+            src="https://i.imgur.com/wXMTixZh.png"
             alt=""
             className="backimg"
           />

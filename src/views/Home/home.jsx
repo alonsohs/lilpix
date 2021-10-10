@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
-import BackgroundVideo from "../../assets/video/Home_Exp_06_optimizado_04.mp4";
+import BackgroundVideo from "../../assets/video/tunnel loop - Imgur.mp4";
 import BackgroundVideoIOS from "../../assets/video/header_video_tunnel_loop.mp4";
 import LogoGlitch from "../../assets/img/logo/lilpix_glitch.png";
 
