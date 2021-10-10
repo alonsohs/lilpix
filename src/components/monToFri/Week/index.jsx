@@ -17,6 +17,7 @@ const Week = ({ number, title, posts }) => {
             title={post.title}
             date={post.date}
             url={post.url}
+            large={post.large}
             behind={post.behind}
             size={post.size}
             resolution={post.resolution}

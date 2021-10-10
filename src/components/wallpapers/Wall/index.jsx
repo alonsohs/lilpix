@@ -23,7 +23,7 @@ const Wallpapers = () => {
           {wallpapers.map((item) => (
             <div className="gallery-item" key={item.id}>
               <div>
-                <img src={item.url} alt="" className="gallery-image" />
+                <img src={item.larger} alt="" className="gallery-image" />
               </div>
               <div className="item__info__wall">
                 <h3>Dimensions: {item.resolution}</h3>

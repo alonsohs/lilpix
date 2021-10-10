@@ -13,7 +13,7 @@ const Tab = ({ children, chageSelectedTab }) => {
   return <button onClick={handleClick}>{children}</button>;
 };
 
-const PostDetails = ({ url, title, date, behind, size, resolution }) => {
+const PostDetails = ({ url, large, title, date, behind, size, resolution }) => {
   const [selected, setSelected] = useState(1);
 
   const [activeFirst, setActiveFirst] = useState(true);
@@ -71,7 +71,7 @@ const PostDetails = ({ url, title, date, behind, size, resolution }) => {
             <p>{date}</p>
           </div>
           <div className="download_img">
-            <img src={url} alt="" />
+            <img src={large} alt="" />
           </div>
 
           <div className="download__icon">

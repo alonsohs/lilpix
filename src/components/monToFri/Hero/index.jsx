@@ -1,9 +1,6 @@
 import React from "react";
 import "./index.css";
 
-import Collage from "../../../assets/img/MonToFri/Mon-to-Fri_PrincipalCollage.png";
-import CollageBehind from "../../../assets/img/MonToFri/Mon-to-Fri_PrincipalCollage_BEHIND.png";
-
 const Hero = ({ numberWeeks }) => {
   return (
     <div className="mon-to-fri_principal">
@@ -17,8 +14,16 @@ const Hero = ({ numberWeeks }) => {
           </div>
         </header>
         <div className="mon-to-fri_cover">
-          <img className="img-front" src={Collage} alt="cover front" />
-          <img src={CollageBehind} className="img-back" alt="cover back" />
+          <img
+            className="img-front"
+            src="https://i.imgur.com/a1BM6v4l.png"
+            alt="cover front"
+          />
+          <img
+            src="https://i.imgur.com/JDFgwmBl.png"
+            className="img-back"
+            alt="cover back"
+          />
         </div>
         <div className="mon-to-fri_description">
           <p>
@@ -32,7 +37,7 @@ const Hero = ({ numberWeeks }) => {
             </strong>{" "}
             bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
             bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla and more
-            bla*
+            bla*.
           </p>
         </div>
       </div>
