@@ -23,7 +23,7 @@
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	background-color: #000;
+	background-color: #0D1117;
 	border: none;
 	z-index: 10;
 	margin: 0;
@@ -107,8 +107,8 @@
 
 .hr__nav {
 	border: 0;
-	height: 2px;
-	background: #05fdd8;
+	height: 3px;
+	background: #008f79;
 
 }
 
@@ -174,7 +174,7 @@
 		align-items: center;
 		margin: 0;
 		padding: 0;
-		background-color: #000;
+		background-color: #0D1117;
 		opacity: 0;
 		transition: opacity 1s ease-out;
 		width: 100%;

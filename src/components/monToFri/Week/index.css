@@ -1,7 +1,7 @@
 /*---------------------------------WEEK # - CONTAINER-----------------------------------------------------------*/
 .week_container_main {
 	position: relative;
-background-color: #181818;
+background-color: #161B22;
 }
 
 .weeks_title {
@@ -30,7 +30,7 @@ background-color: #181818;
 	justify-content: center;
 	padding: 30px;
 	gap: 60px;
-	background-color: #181818;
+	background-color: #161B22;
 }
 /*Container of each image and info block*/
 .info_and_img {

@@ -11,8 +11,8 @@
 .modal-main {
 	position: fixed;
 	z-index: 101;
-	background: #000;
-	border: #181818 5px;
+	background: #161B22;
+	border: #0D1117 5px;
 	border-style: outset;
 	width: 90%;
 	height: 90vh;
