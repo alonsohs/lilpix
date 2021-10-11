@@ -240,7 +240,7 @@ body.hide-content .tunnel {
 	height: 100vh;
 	width: 100vw;
 	z-index: 100;
-	background-color: #000;
+	background-color: #0D1117;
 	display: flex;
 	justify-content: center;
 	align-items: center;
