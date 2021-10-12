@@ -69,51 +69,54 @@ const Home = () => {
   };
 
   return (
-    <div className="header-video">
-      <ReactPlayer
-        playing={playVideo}
-        onReady={handleOnStart}
-        width={"100%"}
-        height={"100%"}
-        url={video + "#t=3.5"}
-        config={{
-          file: {
-            forceVideo: true,
-            attributes: {
-              loop: true,
-              muted: true,
-              className: "tunnel",
-              playsInline: true,
+    <>
+      <title>Home | Lilpix</title>
+      <div className="header-video">
+        <ReactPlayer
+          playing={playVideo}
+          onReady={handleOnStart}
+          width={"100%"}
+          height={"100%"}
+          url={video + "#t=3.5"}
+          config={{
+            file: {
+              forceVideo: true,
+              attributes: {
+                loop: true,
+                muted: true,
+                className: "tunnel",
+                playsInline: true,
+              },
             },
-          },
-        }}
-      />
-      <header className="showcase">
-        <h2 className="not-artistic">Not artistic,</h2>
-        <h2 className="unrealistic">unrealistic,</h2>
-        <h2 className="unsafe-a-little">unsafe a little,</h2>
-        <h2 className="not-those-things">not those things.</h2>
+          }}
+        />
+        <header className="showcase">
+          <h2 className="not-artistic">Not artistic,</h2>
+          <h2 className="unrealistic">unrealistic,</h2>
+          <h2 className="unsafe-a-little">unsafe a little,</h2>
+          <h2 className="not-those-things">not those things.</h2>
 
-        <p className="what-i-pretend">digital artist in progress... :)</p>
-      </header>
-      {(loadingTime || showSplashScreen) && showOpening && (
-        <div className={"splash-screen"}>
-          <div className={"splash-screen__inner"}>
-            <img src={LogoGlitch} alt="logo" />
-            <div className="loading">
-              <h2>Loading...</h2>
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
+          <p className="what-i-pretend">digital artist in progress... :)</p>
+        </header>
+        {(loadingTime || showSplashScreen) && showOpening && (
+          <div className={"splash-screen"}>
+            <div className={"splash-screen__inner"}>
+              <img src={LogoGlitch} alt="logo" />
+              <div className="loading">
+                <h2>Loading...</h2>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </div>
             </div>
           </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    </>
   );
 };
 

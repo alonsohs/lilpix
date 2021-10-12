@@ -4,6 +4,7 @@ import Formulario from "../../components/Contact/Formulario";
 const Contact = () => {
   return (
     <>
+      <title>Contact | Lilpix</title>
       <div className="hero_container">
         <header className="section_header">Contact</header>
         <hr className="hr_m-t-f" />

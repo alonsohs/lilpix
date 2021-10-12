@@ -68,24 +68,20 @@ const NavBar = () => {
 
           <ul className="nav-menu-social">
             <li>
-              <a to="#">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-            </li>
-
-            <li>
               <a href="https://www.instagram.com/lilpix_px/" target="_blank">
                 <i className="fab fa-instagram"></i>
               </a>
             </li>
+
             <li>
-              <a to="#">
+              <a href="https://twitter.com/lilpix_px" target="_blank">
                 <i className="fab fa-twitter"></i>
               </a>
             </li>
+
             <li>
-              <a to="#">
-                <i className="fab fa-youtube"></i>
+              <a href="https://github.com/lilpix-px" target="_blank">
+                <i className="fab fa-github"></i>
               </a>
             </li>
           </ul>
